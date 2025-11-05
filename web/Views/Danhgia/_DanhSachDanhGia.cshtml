@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Nhom3.Models.DanhGia>
+
+<div id="danh-sach-danhgia" class="danh-sach-danhgia">
+    <h5>Ý kiến khách hàng (@Model.Count())</h5>
+
+    @if (!Model.Any())
+    {
+        <p>Chưa có đánh giá nào.</p>
+    }
+    else
+    {
+        foreach (var item in Model)
+        {
+            <div class="review-item border-bottom mb-2 pb-2">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <span class="badge badge-primary">
+                            @(item.XepHang == 1 ? "Tốt" : item.XepHang == 2 ? "Trung bình" : "Tệ")
+                        </span>
+                        <strong class="ml-2">
+                            @(item.TaiKhoanNguoiDung != null ? item.TaiKhoanNguoiDung.HoTen : "Khách")
+                        </strong>
+                        <span class="text-muted"> - @item.NgayTao.ToString("dd/MM/yyyy HH:mm")</span>
+                    </div>
+                </div>
+                <div class="mt-2">
+                    @Html.Raw(System.Web.HttpUtility.HtmlEncode(item.BinhLuan).Replace("\n", "<br/>"))
+                </div>
+            </div>
+
+        }
+    }
+</div>

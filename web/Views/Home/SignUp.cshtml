@@ -1,0 +1,131 @@
+﻿@model Nhom3.Models.TaiKhoanNguoiDung
+@{
+    ViewBag.Title = "Đăng ký";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Breadcrumb Start -->
+<div class="breadcrumb-area mt-30">
+    <div class="container">
+        <div class="breadcrumb">
+            <ul class="d-flex align-items-center">
+                <li>@Html.ActionLink("Trang chủ", "Index", "Home")</li>
+                <li class="active">@Html.ActionLink("Đăng ký", "SignUp", "Home")</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Container End -->
+</div>
+<!-- Breadcrumb End -->
+<!-- Register Account Start -->
+<div class="register-account ptb-100 ptb-sm-60">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="register-title">
+                    <h3 class="mb-10">Đăng ký tài khoản</h3>
+                    <p class="mb-10">Nếu bạn đã có tài khoản hãy tới trang @Html.ActionLink("Đăng nhập", "Login", "Home")</p>
+                </div>
+            </div>
+        </div>
+        <!-- Row End -->
+        <div class="row">
+            <div class="col-sm-12">
+                @using (Html.BeginForm("SignUp", "Home", FormMethod.Post, new { onsubmit = " return check()" }))
+                {
+                    <fieldset>
+                        <legend>Hãy điền các thông tin dưới đây</legend>
+                        <div class="form-group d-md-flex align-items-md-center">
+                            <label class="control-label col-md-2" for="f-name"><span class="require">*</span>Họ và tên</label>
+                            <div class="col-md-10">
+                                @Html.TextBoxFor(model => model.HoTen,
+                                            new { @class = "form-control", @name = "hoten", @autoforcus = "autofocus", @required = "required", @placeholder = "Họ và tên" })
+                            </div>
+                        </div>
+                        <div class="form-group d-md-flex align-items-md-center">
+                            <label class="control-label col-md-2" for="l-name"><span class="require">*</span>Địa chỉ</label>
+                            <div class="col-md-10">
+                                @Html.TextBoxFor(model => model.DiaChi,
+                                            new { @class = "form-control", @name = "diachi", @required = "required", @placeholder = "Địa chỉ" })
+                            </div>
+                        </div>
+                        <div class="form-group d-md-flex align-items-md-center">
+                            <label class="control-label col-md-2" for="email"><span class="require">*</span>Email</label>
+                            <div class="col-md-10">
+                                @Html.TextBoxFor(model => model.Email,
+                                           new { @class = "form-control", @type = "email", @name = "email", @required = "required", @placeholder = "Email" })
+                            </div>
+                        </div>
+                        <div class="form-group d-md-flex align-items-md-center">
+                            <label class="control-label col-md-2" for="number"><span class="require">*</span>Số điện thoại</label>
+                            <div class="col-md-10">
+                                @Html.TextBoxFor(model => model.SoDienThoai,
+                                           new { @class = "form-control", @name = "sodienthoai", @required = "required", @placeholder = "Số điện thoại" })
+                            </div>
+                        </div>
+                        <div class="form-group d-md-flex align-items-md-center">
+                            <label class="control-label col-md-2" for="date"><span class="require">*</span>Ngày sinh</label>
+                            <div class="col-md-10">
+                                @*<input type="date" class="form-control" name="ngaysinh" id="date" required>*@
+                                @Html.TextBoxFor(model => model.NgaySinh,
+                                           new { @class = "form-control", @type = "date", @name = "ngaysinh", @required = "required" })
+                            </div>
+                        </div>
+                        <div class="form-group d-md-flex align-items-md-center">
+                            <label class="control-label col-md-2" for="sex"><span class="require">*</span>Giới tính</label>
+                            <div class="col-md-10">
+                                <input type="radio" checked name="gioitinh" value="true" id="Male" />
+                                <label for="Male">Nam</label>
+
+                                <input type="radio" name="gioitinh" value="false" id="Female" />
+                                <label for="Female">Nữ</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    @Html.ValidationMessage("ErrorSignUp", new { @class = "text-danger", @id = "error-message" })
+                    <br />
+                    <fieldset>
+                        <legend>Tài khoản & Mật khẩu</legend>
+                        <div class="form-group d-md-flex align-items-md-center">
+                            <label class="control-label col-md-2" for="account"><span class="require">*</span>Tài khoản</label>
+                            <div class="col-md-10">
+                                @Html.TextBoxFor(model => model.TenDangNhap,
+                                           new { @class = "form-control", @name = "tendangnhap", @required = "required", @placeholder = "Tên đăng nhập" })
+                            </div>
+                        </div>
+                        <div class="form-group d-md-flex align-items-md-center">
+                            <label class="control-label col-md-2" for="pwd"><span class="require">*</span>Mật khẩu</label>
+                            <div class="col-md-10">
+                                <input type="password" class="form-control" id="pwd" name="matkhau" placeholder="Mật khẩu" required>
+                            </div>
+                        </div>
+                        <div class="form-group d-md-flex align-items-md-center">
+                            <label class="control-label col-md-2" for="pwd-confirm"><span class="require">*</span>Xác nhận mật khẩu</label>
+                            <div class="col-md-10">
+                                <input type="password" class="form-control" id="pwd-confirm" placeholder="Xác nhận mật khẩu" required>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="terms">
+                        <div class="float-md-right">
+                            <input type="submit" value="Đăng ký" class="return-customer-btn">
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <!-- Row End -->
+    </div>
+    <!-- Container End -->
+</div>
+<!-- Register Account End -->
+<script>
+    function check() {
+        if (document.getElementById("pwd").value != document.getElementById("pwd-confirm").value) {
+            document.getElementById("error-message").innerHTML = "Mật khẩu không khớp";
+            return false;
+        }
+        return true;
+    }
+</script>
+

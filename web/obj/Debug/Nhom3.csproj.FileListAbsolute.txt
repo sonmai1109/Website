@@ -1,0 +1,951 @@
+D:\WebForms\Nhom3\bin\Nhom3.dll.config
+D:\WebForms\Nhom3\bin\Nhom3.dll
+D:\WebForms\Nhom3\bin\Nhom3.pdb
+D:\WebForms\Nhom3\bin\roslyn\csc.exe
+D:\WebForms\Nhom3\bin\roslyn\csc.exe.config
+D:\WebForms\Nhom3\bin\roslyn\csc.rsp
+D:\WebForms\Nhom3\bin\roslyn\csi.exe
+D:\WebForms\Nhom3\bin\roslyn\csi.exe.config
+D:\WebForms\Nhom3\bin\roslyn\csi.rsp
+D:\WebForms\Nhom3\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\WebForms\Nhom3\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\WebForms\Nhom3\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\WebForms\Nhom3\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\WebForms\Nhom3\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\WebForms\Nhom3\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\WebForms\Nhom3\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\WebForms\Nhom3\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\WebForms\Nhom3\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\WebForms\Nhom3\bin\roslyn\Microsoft.Managed.Core.targets
+D:\WebForms\Nhom3\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\WebForms\Nhom3\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\WebForms\Nhom3\bin\roslyn\System.AppContext.dll
+D:\WebForms\Nhom3\bin\roslyn\System.Collections.Immutable.dll
+D:\WebForms\Nhom3\bin\roslyn\System.Console.dll
+D:\WebForms\Nhom3\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\WebForms\Nhom3\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\WebForms\Nhom3\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\WebForms\Nhom3\bin\roslyn\System.Globalization.Calendars.dll
+D:\WebForms\Nhom3\bin\roslyn\System.IO.Compression.dll
+D:\WebForms\Nhom3\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\WebForms\Nhom3\bin\roslyn\System.IO.FileSystem.dll
+D:\WebForms\Nhom3\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\WebForms\Nhom3\bin\roslyn\System.Net.Http.dll
+D:\WebForms\Nhom3\bin\roslyn\System.Net.Sockets.dll
+D:\WebForms\Nhom3\bin\roslyn\System.Reflection.Metadata.dll
+D:\WebForms\Nhom3\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\WebForms\Nhom3\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\WebForms\Nhom3\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\WebForms\Nhom3\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\WebForms\Nhom3\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\WebForms\Nhom3\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\WebForms\Nhom3\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\WebForms\Nhom3\bin\roslyn\System.ValueTuple.dll
+D:\WebForms\Nhom3\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\WebForms\Nhom3\bin\roslyn\System.Xml.XmlDocument.dll
+D:\WebForms\Nhom3\bin\roslyn\System.Xml.XPath.dll
+D:\WebForms\Nhom3\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\WebForms\Nhom3\bin\roslyn\vbc.exe
+D:\WebForms\Nhom3\bin\roslyn\vbc.exe.config
+D:\WebForms\Nhom3\bin\roslyn\vbc.rsp
+D:\WebForms\Nhom3\bin\roslyn\VBCSCompiler.exe
+D:\WebForms\Nhom3\bin\roslyn\VBCSCompiler.exe.config
+D:\WebForms\Nhom3\bin\Antlr3.Runtime.dll
+D:\WebForms\Nhom3\bin\EntityFramework.dll
+D:\WebForms\Nhom3\bin\EntityFramework.SqlServer.dll
+D:\WebForms\Nhom3\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\WebForms\Nhom3\bin\Microsoft.Web.Infrastructure.dll
+D:\WebForms\Nhom3\bin\Newtonsoft.Json.dll
+D:\WebForms\Nhom3\bin\System.Web.Helpers.dll
+D:\WebForms\Nhom3\bin\System.Web.Mvc.dll
+D:\WebForms\Nhom3\bin\System.Web.Optimization.dll
+D:\WebForms\Nhom3\bin\System.Web.Razor.dll
+D:\WebForms\Nhom3\bin\System.Web.WebPages.Deployment.dll
+D:\WebForms\Nhom3\bin\System.Web.WebPages.dll
+D:\WebForms\Nhom3\bin\System.Web.WebPages.Razor.dll
+D:\WebForms\Nhom3\bin\WebGrease.dll
+D:\WebForms\Nhom3\bin\EntityFramework.xml
+D:\WebForms\Nhom3\bin\EntityFramework.SqlServer.xml
+D:\WebForms\Nhom3\bin\System.Web.Helpers.xml
+D:\WebForms\Nhom3\bin\System.Web.Mvc.xml
+D:\WebForms\Nhom3\bin\System.Web.Optimization.xml
+D:\WebForms\Nhom3\bin\System.Web.Razor.xml
+D:\WebForms\Nhom3\bin\System.Web.WebPages.xml
+D:\WebForms\Nhom3\bin\System.Web.WebPages.Deployment.xml
+D:\WebForms\Nhom3\bin\System.Web.WebPages.Razor.xml
+D:\WebForms\Nhom3\bin\Newtonsoft.Json.xml
+D:\WebForms\Nhom3\bin\Antlr3.Runtime.pdb
+D:\WebForms\Nhom3\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\WebForms\Nhom3\obj\Debug\Nhom3.csproj.AssemblyReference.cache
+D:\WebForms\Nhom3\obj\Debug\Nhom3.csproj.CoreCompileInputs.cache
+D:\WebForms\Nhom3\obj\Debug\Nhom3.csproj.Up2Date
+D:\WebForms\Nhom3\obj\Debug\Nhom3.dll
+D:\WebForms\Nhom3\obj\Debug\Nhom3.pdb
+D:\WebForms\Nhom3\bin\PagedList.dll
+D:\WebForms\Nhom3\bin\PagedList.Mvc.dll
+D:\WebForms\Nhom3\bin\PagedList.xml
+D:\WebForms\Nhom3\bin\PagedList.Mvc.xml
+D:\Download\Nhom3(1)\bin\Nhom3.dll.config
+D:\Download\Nhom3(1)\bin\Nhom3.dll
+D:\Download\Nhom3(1)\bin\Nhom3.pdb
+D:\Download\Nhom3(1)\bin\roslyn\csc.exe
+D:\Download\Nhom3(1)\bin\roslyn\csc.exe.config
+D:\Download\Nhom3(1)\bin\roslyn\csc.rsp
+D:\Download\Nhom3(1)\bin\roslyn\csi.exe
+D:\Download\Nhom3(1)\bin\roslyn\csi.exe.config
+D:\Download\Nhom3(1)\bin\roslyn\csi.rsp
+D:\Download\Nhom3(1)\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Download\Nhom3(1)\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Download\Nhom3(1)\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Download\Nhom3(1)\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Download\Nhom3(1)\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Download\Nhom3(1)\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Download\Nhom3(1)\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Download\Nhom3(1)\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Download\Nhom3(1)\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Download\Nhom3(1)\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Download\Nhom3(1)\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Download\Nhom3(1)\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Download\Nhom3(1)\bin\roslyn\System.AppContext.dll
+D:\Download\Nhom3(1)\bin\roslyn\System.Collections.Immutable.dll
+D:\Download\Nhom3(1)\bin\roslyn\System.Console.dll
+D:\Download\Nhom3(1)\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Download\Nhom3(1)\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Download\Nhom3(1)\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Download\Nhom3(1)\bin\roslyn\System.Globalization.Calendars.dll
+D:\Download\Nhom3(1)\bin\roslyn\System.IO.Compression.dll
+D:\Download\Nhom3(1)\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Download\Nhom3(1)\bin\roslyn\System.IO.FileSystem.dll
+D:\Download\Nhom3(1)\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Download\Nhom3(1)\bin\roslyn\System.Net.Http.dll
+D:\Download\Nhom3(1)\bin\roslyn\System.Net.Sockets.dll
+D:\Download\Nhom3(1)\bin\roslyn\System.Reflection.Metadata.dll
+D:\Download\Nhom3(1)\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Download\Nhom3(1)\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Download\Nhom3(1)\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Download\Nhom3(1)\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Download\Nhom3(1)\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Download\Nhom3(1)\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Download\Nhom3(1)\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Download\Nhom3(1)\bin\roslyn\System.ValueTuple.dll
+D:\Download\Nhom3(1)\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Download\Nhom3(1)\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Download\Nhom3(1)\bin\roslyn\System.Xml.XPath.dll
+D:\Download\Nhom3(1)\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Download\Nhom3(1)\bin\roslyn\vbc.exe
+D:\Download\Nhom3(1)\bin\roslyn\vbc.exe.config
+D:\Download\Nhom3(1)\bin\roslyn\vbc.rsp
+D:\Download\Nhom3(1)\bin\roslyn\VBCSCompiler.exe
+D:\Download\Nhom3(1)\bin\roslyn\VBCSCompiler.exe.config
+D:\Download\Nhom3(1)\bin\Antlr3.Runtime.dll
+D:\Download\Nhom3(1)\bin\EntityFramework.dll
+D:\Download\Nhom3(1)\bin\EntityFramework.SqlServer.dll
+D:\Download\Nhom3(1)\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Download\Nhom3(1)\bin\Microsoft.Web.Infrastructure.dll
+D:\Download\Nhom3(1)\bin\Newtonsoft.Json.dll
+D:\Download\Nhom3(1)\bin\PagedList.dll
+D:\Download\Nhom3(1)\bin\PagedList.Mvc.dll
+D:\Download\Nhom3(1)\bin\System.Web.Helpers.dll
+D:\Download\Nhom3(1)\bin\System.Web.Mvc.dll
+D:\Download\Nhom3(1)\bin\System.Web.Optimization.dll
+D:\Download\Nhom3(1)\bin\System.Web.Razor.dll
+D:\Download\Nhom3(1)\bin\System.Web.WebPages.Deployment.dll
+D:\Download\Nhom3(1)\bin\System.Web.WebPages.dll
+D:\Download\Nhom3(1)\bin\System.Web.WebPages.Razor.dll
+D:\Download\Nhom3(1)\bin\WebGrease.dll
+D:\Download\Nhom3(1)\bin\EntityFramework.xml
+D:\Download\Nhom3(1)\bin\EntityFramework.SqlServer.xml
+D:\Download\Nhom3(1)\bin\PagedList.xml
+D:\Download\Nhom3(1)\bin\PagedList.Mvc.xml
+D:\Download\Nhom3(1)\bin\System.Web.Helpers.xml
+D:\Download\Nhom3(1)\bin\System.Web.Mvc.xml
+D:\Download\Nhom3(1)\bin\System.Web.Optimization.xml
+D:\Download\Nhom3(1)\bin\System.Web.Razor.xml
+D:\Download\Nhom3(1)\bin\System.Web.WebPages.xml
+D:\Download\Nhom3(1)\bin\System.Web.WebPages.Deployment.xml
+D:\Download\Nhom3(1)\bin\System.Web.WebPages.Razor.xml
+D:\Download\Nhom3(1)\bin\Newtonsoft.Json.xml
+D:\Download\Nhom3(1)\bin\Antlr3.Runtime.pdb
+D:\Download\Nhom3(1)\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Download\Nhom3(1)\obj\Debug\Nhom3.csproj.AssemblyReference.cache
+D:\Download\Nhom3(1)\obj\Debug\Nhom3.csproj.CoreCompileInputs.cache
+D:\Download\Nhom3(1)\obj\Debug\Nhom3.csproj.Up2Date
+D:\Download\Nhom3(1)\obj\Debug\Nhom3.dll
+D:\Download\Nhom3(1)\obj\Debug\Nhom3.pdb
+D:\Download\Nhom3thu\bin\Nhom3.dll.config
+D:\Download\Nhom3thu\bin\Nhom3.dll
+D:\Download\Nhom3thu\bin\Nhom3.pdb
+D:\Download\Nhom3thu\bin\roslyn\csc.exe
+D:\Download\Nhom3thu\bin\roslyn\csc.exe.config
+D:\Download\Nhom3thu\bin\roslyn\csc.rsp
+D:\Download\Nhom3thu\bin\roslyn\csi.exe
+D:\Download\Nhom3thu\bin\roslyn\csi.exe.config
+D:\Download\Nhom3thu\bin\roslyn\csi.rsp
+D:\Download\Nhom3thu\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Download\Nhom3thu\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Download\Nhom3thu\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Download\Nhom3thu\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Download\Nhom3thu\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Download\Nhom3thu\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Download\Nhom3thu\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Download\Nhom3thu\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Download\Nhom3thu\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Download\Nhom3thu\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Download\Nhom3thu\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Download\Nhom3thu\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Download\Nhom3thu\bin\roslyn\System.AppContext.dll
+D:\Download\Nhom3thu\bin\roslyn\System.Collections.Immutable.dll
+D:\Download\Nhom3thu\bin\roslyn\System.Console.dll
+D:\Download\Nhom3thu\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Download\Nhom3thu\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Download\Nhom3thu\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Download\Nhom3thu\bin\roslyn\System.Globalization.Calendars.dll
+D:\Download\Nhom3thu\bin\roslyn\System.IO.Compression.dll
+D:\Download\Nhom3thu\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Download\Nhom3thu\bin\roslyn\System.IO.FileSystem.dll
+D:\Download\Nhom3thu\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Download\Nhom3thu\bin\roslyn\System.Net.Http.dll
+D:\Download\Nhom3thu\bin\roslyn\System.Net.Sockets.dll
+D:\Download\Nhom3thu\bin\roslyn\System.Reflection.Metadata.dll
+D:\Download\Nhom3thu\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Download\Nhom3thu\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Download\Nhom3thu\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Download\Nhom3thu\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Download\Nhom3thu\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Download\Nhom3thu\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Download\Nhom3thu\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Download\Nhom3thu\bin\roslyn\System.ValueTuple.dll
+D:\Download\Nhom3thu\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Download\Nhom3thu\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Download\Nhom3thu\bin\roslyn\System.Xml.XPath.dll
+D:\Download\Nhom3thu\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Download\Nhom3thu\bin\roslyn\vbc.exe
+D:\Download\Nhom3thu\bin\roslyn\vbc.exe.config
+D:\Download\Nhom3thu\bin\roslyn\vbc.rsp
+D:\Download\Nhom3thu\bin\roslyn\VBCSCompiler.exe
+D:\Download\Nhom3thu\bin\roslyn\VBCSCompiler.exe.config
+D:\Download\Nhom3thu\bin\Antlr3.Runtime.dll
+D:\Download\Nhom3thu\bin\EntityFramework.dll
+D:\Download\Nhom3thu\bin\EntityFramework.SqlServer.dll
+D:\Download\Nhom3thu\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Download\Nhom3thu\bin\Microsoft.Web.Infrastructure.dll
+D:\Download\Nhom3thu\bin\Newtonsoft.Json.dll
+D:\Download\Nhom3thu\bin\PagedList.dll
+D:\Download\Nhom3thu\bin\PagedList.Mvc.dll
+D:\Download\Nhom3thu\bin\System.Web.Helpers.dll
+D:\Download\Nhom3thu\bin\System.Web.Mvc.dll
+D:\Download\Nhom3thu\bin\System.Web.Optimization.dll
+D:\Download\Nhom3thu\bin\System.Web.Razor.dll
+D:\Download\Nhom3thu\bin\System.Web.WebPages.Deployment.dll
+D:\Download\Nhom3thu\bin\System.Web.WebPages.dll
+D:\Download\Nhom3thu\bin\System.Web.WebPages.Razor.dll
+D:\Download\Nhom3thu\bin\WebGrease.dll
+D:\Download\Nhom3thu\bin\EntityFramework.xml
+D:\Download\Nhom3thu\bin\EntityFramework.SqlServer.xml
+D:\Download\Nhom3thu\bin\PagedList.xml
+D:\Download\Nhom3thu\bin\PagedList.Mvc.xml
+D:\Download\Nhom3thu\bin\System.Web.Helpers.xml
+D:\Download\Nhom3thu\bin\System.Web.Mvc.xml
+D:\Download\Nhom3thu\bin\System.Web.Optimization.xml
+D:\Download\Nhom3thu\bin\System.Web.Razor.xml
+D:\Download\Nhom3thu\bin\System.Web.WebPages.xml
+D:\Download\Nhom3thu\bin\System.Web.WebPages.Deployment.xml
+D:\Download\Nhom3thu\bin\System.Web.WebPages.Razor.xml
+D:\Download\Nhom3thu\bin\Newtonsoft.Json.xml
+D:\Download\Nhom3thu\bin\Antlr3.Runtime.pdb
+D:\Download\Nhom3thu\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Download\Nhom3thu\obj\Debug\Nhom3.csproj.AssemblyReference.cache
+D:\Download\Nhom3thu\obj\Debug\Nhom3.csproj.CoreCompileInputs.cache
+D:\Download\Nhom3thu\obj\Debug\Nhom3.csproj.Up2Date
+D:\Download\Nhom3thu\obj\Debug\Nhom3.dll
+D:\Download\Nhom3thu\obj\Debug\Nhom3.pdb
+D:\Download\Nhom3thu\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Download\Nhom3thu\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Download\Nhom3thu\bin\Castle.Core.dll
+D:\Download\Nhom3thu\bin\Castle.Core.xml
+D:\THHTPM\Nhom3thu\bin\Nhom3.dll.config
+D:\THHTPM\Nhom3thu\bin\Nhom3.dll
+D:\THHTPM\Nhom3thu\bin\Nhom3.pdb
+D:\THHTPM\Nhom3thu\bin\roslyn\csc.exe
+D:\THHTPM\Nhom3thu\bin\roslyn\csc.exe.config
+D:\THHTPM\Nhom3thu\bin\roslyn\csc.rsp
+D:\THHTPM\Nhom3thu\bin\roslyn\csi.exe
+D:\THHTPM\Nhom3thu\bin\roslyn\csi.exe.config
+D:\THHTPM\Nhom3thu\bin\roslyn\csi.rsp
+D:\THHTPM\Nhom3thu\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\THHTPM\Nhom3thu\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\Microsoft.Managed.Core.targets
+D:\THHTPM\Nhom3thu\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\THHTPM\Nhom3thu\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\System.AppContext.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\System.Collections.Immutable.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\System.Console.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\System.Globalization.Calendars.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\System.IO.Compression.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\System.IO.FileSystem.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\System.Net.Http.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\System.Net.Sockets.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\System.Reflection.Metadata.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\System.ValueTuple.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\System.Xml.XmlDocument.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\System.Xml.XPath.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\THHTPM\Nhom3thu\bin\roslyn\vbc.exe
+D:\THHTPM\Nhom3thu\bin\roslyn\vbc.exe.config
+D:\THHTPM\Nhom3thu\bin\roslyn\vbc.rsp
+D:\THHTPM\Nhom3thu\bin\roslyn\VBCSCompiler.exe
+D:\THHTPM\Nhom3thu\bin\roslyn\VBCSCompiler.exe.config
+D:\THHTPM\Nhom3thu\bin\Antlr3.Runtime.dll
+D:\THHTPM\Nhom3thu\bin\Castle.Core.dll
+D:\THHTPM\Nhom3thu\bin\EntityFramework.dll
+D:\THHTPM\Nhom3thu\bin\EntityFramework.SqlServer.dll
+D:\THHTPM\Nhom3thu\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\THHTPM\Nhom3thu\bin\Microsoft.Web.Infrastructure.dll
+D:\THHTPM\Nhom3thu\bin\Newtonsoft.Json.dll
+D:\THHTPM\Nhom3thu\bin\PagedList.dll
+D:\THHTPM\Nhom3thu\bin\PagedList.Mvc.dll
+D:\THHTPM\Nhom3thu\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\THHTPM\Nhom3thu\bin\System.Web.Helpers.dll
+D:\THHTPM\Nhom3thu\bin\System.Web.Mvc.dll
+D:\THHTPM\Nhom3thu\bin\System.Web.Optimization.dll
+D:\THHTPM\Nhom3thu\bin\System.Web.Razor.dll
+D:\THHTPM\Nhom3thu\bin\System.Web.WebPages.Deployment.dll
+D:\THHTPM\Nhom3thu\bin\System.Web.WebPages.dll
+D:\THHTPM\Nhom3thu\bin\System.Web.WebPages.Razor.dll
+D:\THHTPM\Nhom3thu\bin\WebGrease.dll
+D:\THHTPM\Nhom3thu\bin\Castle.Core.xml
+D:\THHTPM\Nhom3thu\bin\EntityFramework.xml
+D:\THHTPM\Nhom3thu\bin\EntityFramework.SqlServer.xml
+D:\THHTPM\Nhom3thu\bin\PagedList.xml
+D:\THHTPM\Nhom3thu\bin\PagedList.Mvc.xml
+D:\THHTPM\Nhom3thu\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\THHTPM\Nhom3thu\bin\System.Web.Helpers.xml
+D:\THHTPM\Nhom3thu\bin\System.Web.Mvc.xml
+D:\THHTPM\Nhom3thu\bin\System.Web.Optimization.xml
+D:\THHTPM\Nhom3thu\bin\System.Web.Razor.xml
+D:\THHTPM\Nhom3thu\bin\System.Web.WebPages.xml
+D:\THHTPM\Nhom3thu\bin\System.Web.WebPages.Deployment.xml
+D:\THHTPM\Nhom3thu\bin\System.Web.WebPages.Razor.xml
+D:\THHTPM\Nhom3thu\bin\Newtonsoft.Json.xml
+D:\THHTPM\Nhom3thu\bin\Antlr3.Runtime.pdb
+D:\THHTPM\Nhom3thu\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\THHTPM\Nhom3thu\obj\Debug\Nhom3.csproj.AssemblyReference.cache
+D:\THHTPM\Nhom3thu\obj\Debug\Nhom3.csproj.CoreCompileInputs.cache
+D:\THHTPM\Nhom3thu\obj\Debug\Nhom3.csproj.Up2Date
+D:\THHTPM\Nhom3thu\obj\Debug\Nhom3.dll
+D:\THHTPM\Nhom3thu\obj\Debug\Nhom3.pdb
+D:\THHTPM\Nhom3thu\bin\Microsoft.Configuration.ConfigurationBuilders.Base.dll
+D:\THHTPM\Nhom3thu\bin\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.dll
+D:\THHTPM\Nhom3thu\bin\Moq.dll
+D:\THHTPM\Nhom3thu\bin\System.Threading.Tasks.Extensions.dll
+D:\THHTPM\Nhom3thu\bin\Microsoft.Configuration.ConfigurationBuilders.Base.xml
+D:\THHTPM\Nhom3thu\bin\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.xml
+D:\THHTPM\Nhom3thu\bin\System.Threading.Tasks.Extensions.xml
+D:\Download\ban cuoi\bin\Nhom3.dll.config
+D:\Download\ban cuoi\bin\Nhom3.dll
+D:\Download\ban cuoi\bin\Nhom3.pdb
+D:\Download\ban cuoi\bin\roslyn\csc.exe
+D:\Download\ban cuoi\bin\roslyn\csc.exe.config
+D:\Download\ban cuoi\bin\roslyn\csc.rsp
+D:\Download\ban cuoi\bin\roslyn\csi.exe
+D:\Download\ban cuoi\bin\roslyn\csi.exe.config
+D:\Download\ban cuoi\bin\roslyn\csi.rsp
+D:\Download\ban cuoi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Download\ban cuoi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Download\ban cuoi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Download\ban cuoi\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Download\ban cuoi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Download\ban cuoi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Download\ban cuoi\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Download\ban cuoi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Download\ban cuoi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Download\ban cuoi\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Download\ban cuoi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Download\ban cuoi\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Download\ban cuoi\bin\roslyn\System.AppContext.dll
+D:\Download\ban cuoi\bin\roslyn\System.Collections.Immutable.dll
+D:\Download\ban cuoi\bin\roslyn\System.Console.dll
+D:\Download\ban cuoi\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Download\ban cuoi\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Download\ban cuoi\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Download\ban cuoi\bin\roslyn\System.Globalization.Calendars.dll
+D:\Download\ban cuoi\bin\roslyn\System.IO.Compression.dll
+D:\Download\ban cuoi\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Download\ban cuoi\bin\roslyn\System.IO.FileSystem.dll
+D:\Download\ban cuoi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Download\ban cuoi\bin\roslyn\System.Net.Http.dll
+D:\Download\ban cuoi\bin\roslyn\System.Net.Sockets.dll
+D:\Download\ban cuoi\bin\roslyn\System.Reflection.Metadata.dll
+D:\Download\ban cuoi\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Download\ban cuoi\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Download\ban cuoi\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Download\ban cuoi\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Download\ban cuoi\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Download\ban cuoi\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Download\ban cuoi\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Download\ban cuoi\bin\roslyn\System.ValueTuple.dll
+D:\Download\ban cuoi\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Download\ban cuoi\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Download\ban cuoi\bin\roslyn\System.Xml.XPath.dll
+D:\Download\ban cuoi\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Download\ban cuoi\bin\roslyn\vbc.exe
+D:\Download\ban cuoi\bin\roslyn\vbc.exe.config
+D:\Download\ban cuoi\bin\roslyn\vbc.rsp
+D:\Download\ban cuoi\bin\roslyn\VBCSCompiler.exe
+D:\Download\ban cuoi\bin\roslyn\VBCSCompiler.exe.config
+D:\Download\ban cuoi\bin\Antlr3.Runtime.dll
+D:\Download\ban cuoi\bin\Castle.Core.dll
+D:\Download\ban cuoi\bin\EntityFramework.dll
+D:\Download\ban cuoi\bin\EntityFramework.SqlServer.dll
+D:\Download\ban cuoi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Download\ban cuoi\bin\Microsoft.Configuration.ConfigurationBuilders.Base.dll
+D:\Download\ban cuoi\bin\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.dll
+D:\Download\ban cuoi\bin\Microsoft.Web.Infrastructure.dll
+D:\Download\ban cuoi\bin\Moq.dll
+D:\Download\ban cuoi\bin\Newtonsoft.Json.dll
+D:\Download\ban cuoi\bin\PagedList.dll
+D:\Download\ban cuoi\bin\PagedList.Mvc.dll
+D:\Download\ban cuoi\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Download\ban cuoi\bin\System.Threading.Tasks.Extensions.dll
+D:\Download\ban cuoi\bin\System.Web.Helpers.dll
+D:\Download\ban cuoi\bin\System.Web.Mvc.dll
+D:\Download\ban cuoi\bin\System.Web.Optimization.dll
+D:\Download\ban cuoi\bin\System.Web.Razor.dll
+D:\Download\ban cuoi\bin\System.Web.WebPages.Deployment.dll
+D:\Download\ban cuoi\bin\System.Web.WebPages.dll
+D:\Download\ban cuoi\bin\System.Web.WebPages.Razor.dll
+D:\Download\ban cuoi\bin\WebGrease.dll
+D:\Download\ban cuoi\bin\Castle.Core.xml
+D:\Download\ban cuoi\bin\EntityFramework.xml
+D:\Download\ban cuoi\bin\EntityFramework.SqlServer.xml
+D:\Download\ban cuoi\bin\Microsoft.Configuration.ConfigurationBuilders.Base.xml
+D:\Download\ban cuoi\bin\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.xml
+D:\Download\ban cuoi\bin\PagedList.xml
+D:\Download\ban cuoi\bin\PagedList.Mvc.xml
+D:\Download\ban cuoi\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Download\ban cuoi\bin\System.Threading.Tasks.Extensions.xml
+D:\Download\ban cuoi\bin\System.Web.Helpers.xml
+D:\Download\ban cuoi\bin\System.Web.Mvc.xml
+D:\Download\ban cuoi\bin\System.Web.Optimization.xml
+D:\Download\ban cuoi\bin\System.Web.Razor.xml
+D:\Download\ban cuoi\bin\System.Web.WebPages.xml
+D:\Download\ban cuoi\bin\System.Web.WebPages.Deployment.xml
+D:\Download\ban cuoi\bin\System.Web.WebPages.Razor.xml
+D:\Download\ban cuoi\bin\Newtonsoft.Json.xml
+D:\Download\ban cuoi\bin\Antlr3.Runtime.pdb
+D:\Download\ban cuoi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Download\ban cuoi\obj\Debug\Nhom3.csproj.AssemblyReference.cache
+D:\Download\ban cuoi\obj\Debug\Nhom3.csproj.CoreCompileInputs.cache
+D:\Download\ban cuoi\obj\Debug\Nhom3.csproj.Up2Date
+D:\Download\ban cuoi\obj\Debug\Nhom3.dll
+D:\Download\ban cuoi\obj\Debug\Nhom3.pdb
+D:\THHTPM\ban cuoi\bin\Nhom3.dll.config
+D:\THHTPM\ban cuoi\bin\Nhom3.dll
+D:\THHTPM\ban cuoi\bin\Nhom3.pdb
+D:\THHTPM\ban cuoi\bin\roslyn\csc.exe
+D:\THHTPM\ban cuoi\bin\roslyn\csc.exe.config
+D:\THHTPM\ban cuoi\bin\roslyn\csc.rsp
+D:\THHTPM\ban cuoi\bin\roslyn\csi.exe
+D:\THHTPM\ban cuoi\bin\roslyn\csi.exe.config
+D:\THHTPM\ban cuoi\bin\roslyn\csi.rsp
+D:\THHTPM\ban cuoi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\THHTPM\ban cuoi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\THHTPM\ban cuoi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\THHTPM\ban cuoi\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\THHTPM\ban cuoi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\THHTPM\ban cuoi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\THHTPM\ban cuoi\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\THHTPM\ban cuoi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\THHTPM\ban cuoi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\THHTPM\ban cuoi\bin\roslyn\Microsoft.Managed.Core.targets
+D:\THHTPM\ban cuoi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\THHTPM\ban cuoi\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\THHTPM\ban cuoi\bin\roslyn\System.AppContext.dll
+D:\THHTPM\ban cuoi\bin\roslyn\System.Collections.Immutable.dll
+D:\THHTPM\ban cuoi\bin\roslyn\System.Console.dll
+D:\THHTPM\ban cuoi\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\THHTPM\ban cuoi\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\THHTPM\ban cuoi\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\THHTPM\ban cuoi\bin\roslyn\System.Globalization.Calendars.dll
+D:\THHTPM\ban cuoi\bin\roslyn\System.IO.Compression.dll
+D:\THHTPM\ban cuoi\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\THHTPM\ban cuoi\bin\roslyn\System.IO.FileSystem.dll
+D:\THHTPM\ban cuoi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\THHTPM\ban cuoi\bin\roslyn\System.Net.Http.dll
+D:\THHTPM\ban cuoi\bin\roslyn\System.Net.Sockets.dll
+D:\THHTPM\ban cuoi\bin\roslyn\System.Reflection.Metadata.dll
+D:\THHTPM\ban cuoi\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\THHTPM\ban cuoi\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\THHTPM\ban cuoi\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\THHTPM\ban cuoi\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\THHTPM\ban cuoi\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\THHTPM\ban cuoi\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\THHTPM\ban cuoi\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\THHTPM\ban cuoi\bin\roslyn\System.ValueTuple.dll
+D:\THHTPM\ban cuoi\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\THHTPM\ban cuoi\bin\roslyn\System.Xml.XmlDocument.dll
+D:\THHTPM\ban cuoi\bin\roslyn\System.Xml.XPath.dll
+D:\THHTPM\ban cuoi\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\THHTPM\ban cuoi\bin\roslyn\vbc.exe
+D:\THHTPM\ban cuoi\bin\roslyn\vbc.exe.config
+D:\THHTPM\ban cuoi\bin\roslyn\vbc.rsp
+D:\THHTPM\ban cuoi\bin\roslyn\VBCSCompiler.exe
+D:\THHTPM\ban cuoi\bin\roslyn\VBCSCompiler.exe.config
+D:\THHTPM\ban cuoi\bin\Antlr3.Runtime.dll
+D:\THHTPM\ban cuoi\bin\Castle.Core.dll
+D:\THHTPM\ban cuoi\bin\EntityFramework.dll
+D:\THHTPM\ban cuoi\bin\EntityFramework.SqlServer.dll
+D:\THHTPM\ban cuoi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\THHTPM\ban cuoi\bin\Microsoft.Configuration.ConfigurationBuilders.Base.dll
+D:\THHTPM\ban cuoi\bin\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.dll
+D:\THHTPM\ban cuoi\bin\Microsoft.Web.Infrastructure.dll
+D:\THHTPM\ban cuoi\bin\Moq.dll
+D:\THHTPM\ban cuoi\bin\Newtonsoft.Json.dll
+D:\THHTPM\ban cuoi\bin\PagedList.dll
+D:\THHTPM\ban cuoi\bin\PagedList.Mvc.dll
+D:\THHTPM\ban cuoi\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\THHTPM\ban cuoi\bin\System.Threading.Tasks.Extensions.dll
+D:\THHTPM\ban cuoi\bin\System.Web.Helpers.dll
+D:\THHTPM\ban cuoi\bin\System.Web.Mvc.dll
+D:\THHTPM\ban cuoi\bin\System.Web.Optimization.dll
+D:\THHTPM\ban cuoi\bin\System.Web.Razor.dll
+D:\THHTPM\ban cuoi\bin\System.Web.WebPages.Deployment.dll
+D:\THHTPM\ban cuoi\bin\System.Web.WebPages.dll
+D:\THHTPM\ban cuoi\bin\System.Web.WebPages.Razor.dll
+D:\THHTPM\ban cuoi\bin\WebGrease.dll
+D:\THHTPM\ban cuoi\bin\Castle.Core.xml
+D:\THHTPM\ban cuoi\bin\EntityFramework.xml
+D:\THHTPM\ban cuoi\bin\EntityFramework.SqlServer.xml
+D:\THHTPM\ban cuoi\bin\Microsoft.Configuration.ConfigurationBuilders.Base.xml
+D:\THHTPM\ban cuoi\bin\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.xml
+D:\THHTPM\ban cuoi\bin\PagedList.xml
+D:\THHTPM\ban cuoi\bin\PagedList.Mvc.xml
+D:\THHTPM\ban cuoi\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\THHTPM\ban cuoi\bin\System.Threading.Tasks.Extensions.xml
+D:\THHTPM\ban cuoi\bin\System.Web.Helpers.xml
+D:\THHTPM\ban cuoi\bin\System.Web.Mvc.xml
+D:\THHTPM\ban cuoi\bin\System.Web.Optimization.xml
+D:\THHTPM\ban cuoi\bin\System.Web.Razor.xml
+D:\THHTPM\ban cuoi\bin\System.Web.WebPages.xml
+D:\THHTPM\ban cuoi\bin\System.Web.WebPages.Deployment.xml
+D:\THHTPM\ban cuoi\bin\System.Web.WebPages.Razor.xml
+D:\THHTPM\ban cuoi\bin\Newtonsoft.Json.xml
+D:\THHTPM\ban cuoi\bin\Antlr3.Runtime.pdb
+D:\THHTPM\ban cuoi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\THHTPM\ban cuoi\obj\Debug\Nhom3.csproj.AssemblyReference.cache
+D:\THHTPM\ban cuoi\obj\Debug\Nhom3.csproj.CoreCompileInputs.cache
+D:\THHTPM\ban cuoi\obj\Debug\Nhom3.csproj.Up2Date
+D:\THHTPM\ban cuoi\obj\Debug\Nhom3.dll
+D:\THHTPM\ban cuoi\obj\Debug\Nhom3.pdb
+D:\Download\bản thêm giảm giá\bin\Nhom3.dll.config
+D:\Download\bản thêm giảm giá\bin\Nhom3.dll
+D:\Download\bản thêm giảm giá\bin\Nhom3.pdb
+D:\Download\bản thêm giảm giá\bin\roslyn\csc.exe
+D:\Download\bản thêm giảm giá\bin\roslyn\csc.exe.config
+D:\Download\bản thêm giảm giá\bin\roslyn\csc.rsp
+D:\Download\bản thêm giảm giá\bin\roslyn\csi.exe
+D:\Download\bản thêm giảm giá\bin\roslyn\csi.exe.config
+D:\Download\bản thêm giảm giá\bin\roslyn\csi.rsp
+D:\Download\bản thêm giảm giá\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Download\bản thêm giảm giá\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Download\bản thêm giảm giá\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Download\bản thêm giảm giá\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\System.AppContext.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\System.Collections.Immutable.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\System.Console.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\System.Globalization.Calendars.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\System.IO.Compression.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\System.IO.FileSystem.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\System.Net.Http.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\System.Net.Sockets.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\System.Reflection.Metadata.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\System.ValueTuple.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\System.Xml.XPath.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Download\bản thêm giảm giá\bin\roslyn\vbc.exe
+D:\Download\bản thêm giảm giá\bin\roslyn\vbc.exe.config
+D:\Download\bản thêm giảm giá\bin\roslyn\vbc.rsp
+D:\Download\bản thêm giảm giá\bin\roslyn\VBCSCompiler.exe
+D:\Download\bản thêm giảm giá\bin\roslyn\VBCSCompiler.exe.config
+D:\Download\bản thêm giảm giá\bin\Antlr3.Runtime.dll
+D:\Download\bản thêm giảm giá\bin\Castle.Core.dll
+D:\Download\bản thêm giảm giá\bin\EntityFramework.dll
+D:\Download\bản thêm giảm giá\bin\EntityFramework.SqlServer.dll
+D:\Download\bản thêm giảm giá\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Download\bản thêm giảm giá\bin\Microsoft.Configuration.ConfigurationBuilders.Base.dll
+D:\Download\bản thêm giảm giá\bin\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.dll
+D:\Download\bản thêm giảm giá\bin\Microsoft.Web.Infrastructure.dll
+D:\Download\bản thêm giảm giá\bin\Moq.dll
+D:\Download\bản thêm giảm giá\bin\Newtonsoft.Json.dll
+D:\Download\bản thêm giảm giá\bin\PagedList.dll
+D:\Download\bản thêm giảm giá\bin\PagedList.Mvc.dll
+D:\Download\bản thêm giảm giá\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Download\bản thêm giảm giá\bin\System.Threading.Tasks.Extensions.dll
+D:\Download\bản thêm giảm giá\bin\System.Web.Helpers.dll
+D:\Download\bản thêm giảm giá\bin\System.Web.Mvc.dll
+D:\Download\bản thêm giảm giá\bin\System.Web.Optimization.dll
+D:\Download\bản thêm giảm giá\bin\System.Web.Razor.dll
+D:\Download\bản thêm giảm giá\bin\System.Web.WebPages.Deployment.dll
+D:\Download\bản thêm giảm giá\bin\System.Web.WebPages.dll
+D:\Download\bản thêm giảm giá\bin\System.Web.WebPages.Razor.dll
+D:\Download\bản thêm giảm giá\bin\WebGrease.dll
+D:\Download\bản thêm giảm giá\bin\Castle.Core.xml
+D:\Download\bản thêm giảm giá\bin\EntityFramework.xml
+D:\Download\bản thêm giảm giá\bin\EntityFramework.SqlServer.xml
+D:\Download\bản thêm giảm giá\bin\Microsoft.Configuration.ConfigurationBuilders.Base.xml
+D:\Download\bản thêm giảm giá\bin\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.xml
+D:\Download\bản thêm giảm giá\bin\PagedList.xml
+D:\Download\bản thêm giảm giá\bin\PagedList.Mvc.xml
+D:\Download\bản thêm giảm giá\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Download\bản thêm giảm giá\bin\System.Threading.Tasks.Extensions.xml
+D:\Download\bản thêm giảm giá\bin\System.Web.Helpers.xml
+D:\Download\bản thêm giảm giá\bin\System.Web.Mvc.xml
+D:\Download\bản thêm giảm giá\bin\System.Web.Optimization.xml
+D:\Download\bản thêm giảm giá\bin\System.Web.Razor.xml
+D:\Download\bản thêm giảm giá\bin\System.Web.WebPages.xml
+D:\Download\bản thêm giảm giá\bin\System.Web.WebPages.Deployment.xml
+D:\Download\bản thêm giảm giá\bin\System.Web.WebPages.Razor.xml
+D:\Download\bản thêm giảm giá\bin\Newtonsoft.Json.xml
+D:\Download\bản thêm giảm giá\bin\Antlr3.Runtime.pdb
+D:\Download\bản thêm giảm giá\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Download\bản thêm giảm giá\obj\Debug\Nhom3.csproj.AssemblyReference.cache
+D:\Download\bản thêm giảm giá\obj\Debug\Nhom3.csproj.CoreCompileInputs.cache
+D:\Download\bản thêm giảm giá\obj\Debug\Nhom3.csproj.Up2Date
+D:\Download\bản thêm giảm giá\obj\Debug\Nhom3.dll
+D:\Download\bản thêm giảm giá\obj\Debug\Nhom3.pdb
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\Nhom3.dll.config
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\Nhom3.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\Nhom3.pdb
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\csc.exe
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\csc.exe.config
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\csc.rsp
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\csi.exe
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\csi.exe.config
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\csi.rsp
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\Microsoft.Managed.Core.targets
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\System.AppContext.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\System.Collections.Immutable.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\System.Console.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\System.Globalization.Calendars.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\System.IO.Compression.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\System.IO.FileSystem.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\System.Net.Http.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\System.Net.Sockets.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\System.Reflection.Metadata.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\System.ValueTuple.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\System.Xml.XmlDocument.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\System.Xml.XPath.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\vbc.exe
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\vbc.exe.config
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\vbc.rsp
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\VBCSCompiler.exe
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\roslyn\VBCSCompiler.exe.config
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\Antlr3.Runtime.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\Castle.Core.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\EntityFramework.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\EntityFramework.SqlServer.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\Microsoft.Configuration.ConfigurationBuilders.Base.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\Microsoft.Web.Infrastructure.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\Moq.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\Newtonsoft.Json.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\PagedList.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\PagedList.Mvc.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\System.Threading.Tasks.Extensions.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\System.Web.Helpers.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\System.Web.Mvc.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\System.Web.Optimization.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\System.Web.Razor.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\System.Web.WebPages.Deployment.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\System.Web.WebPages.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\System.Web.WebPages.Razor.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\WebGrease.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\Castle.Core.xml
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\EntityFramework.xml
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\EntityFramework.SqlServer.xml
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\Microsoft.Configuration.ConfigurationBuilders.Base.xml
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.xml
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\PagedList.xml
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\PagedList.Mvc.xml
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\System.Threading.Tasks.Extensions.xml
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\System.Web.Helpers.xml
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\System.Web.Mvc.xml
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\System.Web.Optimization.xml
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\System.Web.Razor.xml
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\System.Web.WebPages.xml
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\System.Web.WebPages.Deployment.xml
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\System.Web.WebPages.Razor.xml
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\Newtonsoft.Json.xml
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\Antlr3.Runtime.pdb
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\obj\Debug\Nhom3.csproj.AssemblyReference.cache
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\obj\Debug\Nhom3.csproj.CoreCompileInputs.cache
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\obj\Debug\Nhom3.csproj.Up2Date
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\obj\Debug\Nhom3.dll
+D:\THHTPM\BTLDoAn\bản thêm giảm giá\obj\Debug\Nhom3.pdb
+D:\Download\font\bin\Nhom3.dll.config
+D:\Download\font\bin\Nhom3.dll
+D:\Download\font\bin\Nhom3.pdb
+D:\Download\font\bin\roslyn\csc.exe
+D:\Download\font\bin\roslyn\csc.exe.config
+D:\Download\font\bin\roslyn\csc.rsp
+D:\Download\font\bin\roslyn\csi.exe
+D:\Download\font\bin\roslyn\csi.exe.config
+D:\Download\font\bin\roslyn\csi.rsp
+D:\Download\font\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Download\font\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Download\font\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Download\font\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Download\font\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Download\font\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Download\font\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Download\font\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Download\font\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Download\font\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Download\font\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Download\font\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Download\font\bin\roslyn\System.AppContext.dll
+D:\Download\font\bin\roslyn\System.Collections.Immutable.dll
+D:\Download\font\bin\roslyn\System.Console.dll
+D:\Download\font\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Download\font\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Download\font\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Download\font\bin\roslyn\System.Globalization.Calendars.dll
+D:\Download\font\bin\roslyn\System.IO.Compression.dll
+D:\Download\font\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Download\font\bin\roslyn\System.IO.FileSystem.dll
+D:\Download\font\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Download\font\bin\roslyn\System.Net.Http.dll
+D:\Download\font\bin\roslyn\System.Net.Sockets.dll
+D:\Download\font\bin\roslyn\System.Reflection.Metadata.dll
+D:\Download\font\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Download\font\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Download\font\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Download\font\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Download\font\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Download\font\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Download\font\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Download\font\bin\roslyn\System.ValueTuple.dll
+D:\Download\font\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Download\font\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Download\font\bin\roslyn\System.Xml.XPath.dll
+D:\Download\font\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Download\font\bin\roslyn\vbc.exe
+D:\Download\font\bin\roslyn\vbc.exe.config
+D:\Download\font\bin\roslyn\vbc.rsp
+D:\Download\font\bin\roslyn\VBCSCompiler.exe
+D:\Download\font\bin\roslyn\VBCSCompiler.exe.config
+D:\Download\font\bin\Antlr3.Runtime.dll
+D:\Download\font\bin\Castle.Core.dll
+D:\Download\font\bin\EntityFramework.dll
+D:\Download\font\bin\EntityFramework.SqlServer.dll
+D:\Download\font\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Download\font\bin\Microsoft.Configuration.ConfigurationBuilders.Base.dll
+D:\Download\font\bin\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.dll
+D:\Download\font\bin\Microsoft.Web.Infrastructure.dll
+D:\Download\font\bin\Moq.dll
+D:\Download\font\bin\Newtonsoft.Json.dll
+D:\Download\font\bin\PagedList.dll
+D:\Download\font\bin\PagedList.Mvc.dll
+D:\Download\font\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Download\font\bin\System.Threading.Tasks.Extensions.dll
+D:\Download\font\bin\System.Web.Helpers.dll
+D:\Download\font\bin\System.Web.Mvc.dll
+D:\Download\font\bin\System.Web.Optimization.dll
+D:\Download\font\bin\System.Web.Razor.dll
+D:\Download\font\bin\System.Web.WebPages.Deployment.dll
+D:\Download\font\bin\System.Web.WebPages.dll
+D:\Download\font\bin\System.Web.WebPages.Razor.dll
+D:\Download\font\bin\WebGrease.dll
+D:\Download\font\bin\Castle.Core.xml
+D:\Download\font\bin\EntityFramework.xml
+D:\Download\font\bin\EntityFramework.SqlServer.xml
+D:\Download\font\bin\Microsoft.Configuration.ConfigurationBuilders.Base.xml
+D:\Download\font\bin\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.xml
+D:\Download\font\bin\PagedList.xml
+D:\Download\font\bin\PagedList.Mvc.xml
+D:\Download\font\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Download\font\bin\System.Threading.Tasks.Extensions.xml
+D:\Download\font\bin\System.Web.Helpers.xml
+D:\Download\font\bin\System.Web.Mvc.xml
+D:\Download\font\bin\System.Web.Optimization.xml
+D:\Download\font\bin\System.Web.Razor.xml
+D:\Download\font\bin\System.Web.WebPages.xml
+D:\Download\font\bin\System.Web.WebPages.Deployment.xml
+D:\Download\font\bin\System.Web.WebPages.Razor.xml
+D:\Download\font\bin\Newtonsoft.Json.xml
+D:\Download\font\bin\Antlr3.Runtime.pdb
+D:\Download\font\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Download\font\obj\Debug\Nhom3.csproj.AssemblyReference.cache
+D:\Download\font\obj\Debug\Nhom3.csproj.CoreCompileInputs.cache
+D:\Download\font\obj\Debug\Nhom3.csproj.Up2Date
+D:\Download\font\obj\Debug\Nhom3.dll
+D:\Download\font\obj\Debug\Nhom3.pdb
+D:\Download\web\bin\Nhom3.dll.config
+D:\Download\web\bin\Nhom3.dll
+D:\Download\web\bin\Nhom3.pdb
+D:\Download\web\bin\roslyn\csc.exe
+D:\Download\web\bin\roslyn\csc.exe.config
+D:\Download\web\bin\roslyn\csc.rsp
+D:\Download\web\bin\roslyn\csi.exe
+D:\Download\web\bin\roslyn\csi.exe.config
+D:\Download\web\bin\roslyn\csi.rsp
+D:\Download\web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Download\web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Download\web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Download\web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Download\web\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Download\web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Download\web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Download\web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Download\web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Download\web\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Download\web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Download\web\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Download\web\bin\roslyn\System.AppContext.dll
+D:\Download\web\bin\roslyn\System.Collections.Immutable.dll
+D:\Download\web\bin\roslyn\System.Console.dll
+D:\Download\web\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Download\web\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Download\web\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Download\web\bin\roslyn\System.Globalization.Calendars.dll
+D:\Download\web\bin\roslyn\System.IO.Compression.dll
+D:\Download\web\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Download\web\bin\roslyn\System.IO.FileSystem.dll
+D:\Download\web\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Download\web\bin\roslyn\System.Net.Http.dll
+D:\Download\web\bin\roslyn\System.Net.Sockets.dll
+D:\Download\web\bin\roslyn\System.Reflection.Metadata.dll
+D:\Download\web\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Download\web\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Download\web\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Download\web\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Download\web\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Download\web\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Download\web\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Download\web\bin\roslyn\System.ValueTuple.dll
+D:\Download\web\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Download\web\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Download\web\bin\roslyn\System.Xml.XPath.dll
+D:\Download\web\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Download\web\bin\roslyn\vbc.exe
+D:\Download\web\bin\roslyn\vbc.exe.config
+D:\Download\web\bin\roslyn\vbc.rsp
+D:\Download\web\bin\roslyn\VBCSCompiler.exe
+D:\Download\web\bin\roslyn\VBCSCompiler.exe.config
+D:\Download\web\bin\Antlr3.Runtime.dll
+D:\Download\web\bin\Castle.Core.dll
+D:\Download\web\bin\EntityFramework.dll
+D:\Download\web\bin\EntityFramework.SqlServer.dll
+D:\Download\web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Download\web\bin\Microsoft.Configuration.ConfigurationBuilders.Base.dll
+D:\Download\web\bin\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.dll
+D:\Download\web\bin\Microsoft.Web.Infrastructure.dll
+D:\Download\web\bin\Moq.dll
+D:\Download\web\bin\Newtonsoft.Json.dll
+D:\Download\web\bin\PagedList.dll
+D:\Download\web\bin\PagedList.Mvc.dll
+D:\Download\web\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Download\web\bin\System.Threading.Tasks.Extensions.dll
+D:\Download\web\bin\System.Web.Helpers.dll
+D:\Download\web\bin\System.Web.Mvc.dll
+D:\Download\web\bin\System.Web.Optimization.dll
+D:\Download\web\bin\System.Web.Razor.dll
+D:\Download\web\bin\System.Web.WebPages.Deployment.dll
+D:\Download\web\bin\System.Web.WebPages.dll
+D:\Download\web\bin\System.Web.WebPages.Razor.dll
+D:\Download\web\bin\WebGrease.dll
+D:\Download\web\bin\Castle.Core.xml
+D:\Download\web\bin\EntityFramework.xml
+D:\Download\web\bin\EntityFramework.SqlServer.xml
+D:\Download\web\bin\Microsoft.Configuration.ConfigurationBuilders.Base.xml
+D:\Download\web\bin\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.xml
+D:\Download\web\bin\PagedList.xml
+D:\Download\web\bin\PagedList.Mvc.xml
+D:\Download\web\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Download\web\bin\System.Threading.Tasks.Extensions.xml
+D:\Download\web\bin\System.Web.Helpers.xml
+D:\Download\web\bin\System.Web.Mvc.xml
+D:\Download\web\bin\System.Web.Optimization.xml
+D:\Download\web\bin\System.Web.Razor.xml
+D:\Download\web\bin\System.Web.WebPages.xml
+D:\Download\web\bin\System.Web.WebPages.Deployment.xml
+D:\Download\web\bin\System.Web.WebPages.Razor.xml
+D:\Download\web\bin\Newtonsoft.Json.xml
+D:\Download\web\bin\Antlr3.Runtime.pdb
+D:\Download\web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Download\web\obj\Debug\Nhom3.csproj.AssemblyReference.cache
+D:\Download\web\obj\Debug\Nhom3.csproj.CoreCompileInputs.cache
+D:\Download\web\obj\Debug\Nhom3.csproj.Up2Date
+D:\Download\web\obj\Debug\Nhom3.dll
+D:\Download\web\obj\Debug\Nhom3.pdb

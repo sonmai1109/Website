@@ -1,0 +1,3 @@
+﻿@model List<Nhom3.Models.ChiTietHoaDon>
+
+<a href="@Url.Action("Orders","Cart")"><i class="lnr lnr-cart" style="font-size:30px;"></i><span class="product-count" id="product-count" style="height: 32px !important; font-size: 19px !important; padding: 6px !important; margin-top: 5px; margin-right: 19px; width: 40px !important;">@(Model == null ? 0 : Model.Count())</span><span class="my-cart"></span></a>

@@ -1,0 +1,93 @@
+﻿@model Nhom3.Models.TaiKhoanNguoiDung
+@{
+    ViewBag.Title = "Thông tin tài khoản";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Breadcrumb Start -->
+<div class="breadcrumb-area mt-30">
+    <div class="container">
+        <div class="breadcrumb">
+            <ul class="d-flex align-items-center">
+                <li>@Html.ActionLink("Trang chủ", "Index", "Home")</li>
+                <li class="active">@Html.ActionLink("Thông tin tài khoản", "UserInfor", "AccountUser", new { id = Model.MaTK }, new { })</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Container End -->
+</div>
+<!-- Breadcrumb End -->
+<!-- Infor Page Start -->
+<div class="register-account ptb-100 ptb-sm-60">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="register-title">
+                    <h3 class="mb-10">Tài khoản</h3>
+                </div>
+            </div>
+        </div>
+        <!-- Row End -->
+        <div class="row">
+            <div class="col-sm-12">
+                @using (Html.BeginForm("UserInfor", "AccountUser", FormMethod.Post, new { @id = "submit-form" }))
+                {
+                    @Html.ValidationMessage("ErrorUpdate", new { @class = "text-danger" })
+                    <fieldset>
+                        <input type="hidden" value="@Model.MaTK" name="matk" />
+                        <legend>Thông tin tài khoản</legend>
+                        <div class="form-group d-md-flex align-items-md-center">
+                            <label class="control-label col-md-2" for="f-name">Họ và tên</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" name="hoten" placeholder="Họ và tên" value="@Model.HoTen" required>
+                            </div>
+                        </div>
+                        <div class="form-group d-md-flex align-items-md-center">
+                            <label class="control-label col-md-2" for="l-name">Địa chỉ</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" name="diachi" placeholder="Địa chỉ" value="@Model.DiaChi" required>
+                            </div>
+                        </div>
+                        <div class="form-group d-md-flex align-items-md-center">
+                            <label class="control-label col-md-2" for="email">Email</label>
+                            <div class="col-md-10">
+                                <input type="email" class="form-control" name="email" placeholder="Email" value="@Model.Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group d-md-flex align-items-md-center">
+                            <label class="control-label col-md-2" for="number">Số điện thoại</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" name="sodienthoai" placeholder="Số điện thoại" value="@Model.SoDienThoai" required>
+                            </div>
+                        </div>
+                        <div class="form-group d-md-flex align-items-md-center">
+                            <label class="control-label col-md-2" for="date">Ngày sinh</label>
+                            <div class="col-md-10">
+                                <input type="date" class="form-control" name="ngaysinh" value="@Model.NgaySinh.ToString("yyyy-MM-dd")">
+                            </div>
+                        </div>
+                        <div class="form-group d-md-flex align-items-md-center">
+                            <label class="control-label col-md-2" for="gt">Giới tính</label>
+                            <div class="col-md-10">
+                                <input type="radio" checked="@Model.GioiTinh" name="gioitinh" value="true" id="Male" />
+                                <label for="Male">Nam</label>
+
+                                <input type="radio" checked=@(!Model.GioiTinh) name="gioitinh" value="false" id="Female" />
+                                <label for="Female">Nữ</label>
+                            </div>
+                        </div>
+                        <input type="hidden" name="trangthai" value="@Model.TrangThai" />
+                    </fieldset>
+                    <div class="terms">
+                        <div class="float-md-right">
+                            <input type="submit" value="Cập nhật" class="return-customer-btn">
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <!-- Row End -->
+    </div>
+    <!-- Container End -->
+</div>
+<!-- Infor Page End -->

@@ -1,0 +1,218 @@
+﻿@model PagedList.IPagedList<Nhom3.Models.HoaDon>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css">
+@{
+    ViewBag.Title = "Đơn hàng";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
+    <div class="d-block mb-4 mb-md-0">
+
+        <h2 class="h4">Danh sách hóa đơn</h2>
+    </div>
+    <div class="btn-toolbar mb-2 mb-md-0">
+    </div>
+</div>
+<div class="table-settings mb-4">
+    <div class="row align-items-center justify-content-between">
+        <div class="col col-md-6 col-lg-3 col-xl-4">
+            <form>
+                <div class="input-group">
+                    <button class="input-group-text" type="submit" id="basic-addon2"><span class="fas fa-search"></span></button>
+                    <input type="date" class="form-control" name="searchString" value="@ViewBag.searchString" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
+                    <select class="form-control" name="status">
+                        <option value="">Tất cả hóa đơn</option>
+                        <option @(ViewBag.Status == 0 ? "selected" : "") value="0">Đã hủy</option>
+                        <option @(ViewBag.Status == 1 ? "selected" : "") value="1">Đang chuẩn bị</option>
+                        <option @(ViewBag.Status == 2 ? "selected" : "") value="2">Đang giao</option>
+                        <option @(ViewBag.Status == 3 ? "selected" : "") value="3">Đã thanh toán</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="card card-body border-light shadow-sm table-wrapper table-responsive pt-0">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Tên khách hàng</th>
+                <th>Tên người nhận</th>
+                <th>Ngày đặt</th>
+                <th>Địa chỉ nhận</th>
+                <th>Trạng thái</th>
+                <th>Tùy chọn</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Item -->
+            @foreach (var item in Model)
+            {
+                <tr class="group-info">
+                    <td>
+                        @item.TaiKhoanNguoiDung.HoTen
+                    </td>
+                    <td>
+                        <span class="font-weight-normal">@item.HoTenNguoiNhan</span>
+                    </td>
+                    <td><span class="font-weight-normal">@item.NgayDat.ToString()</span></td>
+                    <td><span class="font-weight-normal">@item.DiaChiNhan</span></td>
+                    <td>
+                        <span class="font-weight-normal text-danger">
+                            <select id="hd-trangthai-update-@item.MaHD" onchange="doiTrangThai(@item.MaHD)">
+                                @if (item.TrangThai == 0)
+                                {
+                                    <option value="1" @(item.TrangThai == 0 ? "selected" : "")>Đã bị hủy</option>
+                                }
+                                @if (item.TrangThai != 0)
+                                {
+                                    <option value="1" @(item.TrangThai == 1 ? "selected" : "")>Đang chuẩn bị</option>
+                                    <option value="2" @(item.TrangThai == 2 ? "selected" : "")>Đang giao</option>
+                                    <option value="3" @(item.TrangThai == 3 ? "selected" : "")>Đã thanh toán</option>
+                                }
+                            </select>
+                        </span>
+                    </td>
+                    <td>
+                        <div class="btn-group">
+                            <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="icon icon-sm">
+                                    <span class="fas fa-ellipsis-h icon-dark"></span>
+                                </span>
+                                <span class="sr-only">Danh mục lựa chọn</span>
+                            </button>
+                            <div class="dropdown-menu">
+                                <button class="dropdown-item infoBill" onclick="loadDuLieuChiTiet(@item.MaHD)"><span class="fas fa-eye mr-2"></span>Chi tiết hóa đơn</button>
+                                @if (item.TrangThai != 0)
+                                {
+                                    <button class="dropdown-item text-danger change" type="button" onclick="huyDonHang(@item.MaHD)"><span class="fas fa-trash-alt mr-2"></span>Hủy đơn hàng</button>
+                                }
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="card-footer px-3 border-0 d-flex align-items-center justify-content-between">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination mb-0">
+                @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+
+                @Html.PagedListPager(Model, page => Url.Action("Index",
+                    new { page, pageSize = Model.PageSize, searchString = ViewBag.searchString }))
+            </ul>
+        </nav>
+    </div>
+</div>
+
+@section Popup{
+    <div class="popUp" id="popUp">
+        <div class="col-12 col-cl-10">
+            <div class="card card-body bg-white border-light shadow-sm mb-4">
+                <h2 class="h5 mb-4">Chi tiết hóa đơn</h2>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 mb-2">
+                            <div>
+                                <label for="category">Tên người đặt</label>
+                                <input class="form-control" id="hd-nguoidat" type="text" value="" readonly disabled>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <div>
+                                <label for="nameProduct">Tên người nhận</label>
+                                <input class="form-control" id="hd-nguoinhan" type="text" value="" readonly disabled>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-2">
+                            <div>
+                                <label for="dateBuy">Ngày đặt</label>
+                                <input class="form-control" id="hd-ngaydat" readonly type="text" value="" disabled>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <div>
+                                <label for="size">Trạng thái</label>
+                                <input class="form-control" id="hd-trangthai" type="text" readonly value="" disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-2">
+                            <div>
+                                <label for="phone">Số điện thoại</label>
+                                <input class="form-control" id="hd-sdt" type="text" value="" readonly disabled>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <div>
+                                <label for="address">Địa chỉ nhận</label>
+                                <input class="form-control" id="hd-diachi" type="text" value="" readonly disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-2">
+                            <div>
+                                <label for="phone">Người sửa cuối cùng</label>
+                                <input class="form-control" id="hd-nguoisua" type="text" value="" readonly disabled>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <div>
+                                <label for="address">Ngày sửa cuối cùng</label>
+                                <input class="form-control" id="hd-ngaysua" type="text" value="" readonly disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row overflow-auto mt-3 mb-3">
+                        <label for="address">Danh sách sản phẩm mua</label>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Hình ảnh</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Giá</th>
+                                    <th>Số lượng</th>
+                                    <th>Kích cỡ</th>
+                                    <th>Tổng</th>
+                                </tr>
+                            </thead>
+                            <tbody id="hd-body">
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <label for="note">Ghi chú</label>
+                            <textarea class="form-control" id="hd-ghichu" rows="5" disabled></textarea>
+                        </div>
+                    </div>
+
+
+                    <div class="mt-2">
+                        <div class="btn border-primary cancelPopup" id="cancelPopup">Thoát</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+}
+
+
+@section deletePopup {
+    <div class="deletePopUp" id="deletePopUp">
+
+    </div>
+
+}
+@section Script{
+    <script src="~/Assets/Admin/js/addPopupBill.js"></script>
+    <script src="~/Assets/Admin/js/Bill.js"></script>
+}
+
+

@@ -1,0 +1,220 @@
+﻿@{
+    Nhom3.Models.TaiKhoanQuanTri tk = (Nhom3.Models.TaiKhoanQuanTri)HttpContext.Current.Session[Nhom3.Session.ConstaintUser.ADMIN_SESSION];
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Primary Meta Tags -->
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="120x120" href="~/Assets/Admin/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/Assets/Admin/assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/Assets/Admin/assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="~/Assets/Admin/assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="~/Assets/Admin/assets/img/favicon/safari-pinned-tab.svg" color="#ffffff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fontawesome -->
+    <link type="text/css" href="~/Assets/Admin/vendor/fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- Notyf -->
+    <link type="text/css" href="~/Assets/Admin/vendor/notyf/notyf.min.css" rel="stylesheet">
+
+    <!-- Volt CSS -->
+    <link type="text/css" href="~/Assets/Admin/css/volt.css" rel="stylesheet">
+
+    <!-- NOTICE: You can use the _analytics.html partial to include production code specific code & trackers -->
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-md-none">
+        <a class="navbar-brand mr-lg-5" href="#">
+            <img class="navbar-brand-dark" src="~/Assets/Admin/assets/img/brand/light.svg" alt="Volt logo" /> <img class="navbar-brand-light" src="~/Assets/Admin/assets/img/brand/dark.svg" alt="Volt logo" />
+        </a>
+        <div class="d-flex align-items-center">
+            <button class="navbar-toggler d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-soft">
+        <div class="row">
+            <div class="col-12">
+                <nav id="sidebarMenu" class="sidebar d-md-block bg-primary text-white collapse" data-simplebar>
+                    <div class="sidebar-inner px-4 pt-3">
+                        <div class="user-card d-flex d-md-none align-items-center justify-content-between justify-content-md-center pb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="user-avatar lg-avatar mr-4">
+                                    <img src="~/Assets/Admin/assets/img/team/profile-picture-3.jpg" class="card-img-top rounded-circle border-white" alt="Bonnie Green">
+                                </div>
+                                <div class="d-block">
+                                    <h2 class="h6">Hi, @tk.HoTen</h2>
+                                    <a href="@Url.Action("Logout","Login")" class="btn btn-secondary text-dark btn-xs"><span class="mr-2"><span class="fas fa-sign-out-alt"></span></span>Đăng xuất</a>
+
+                                </div>
+                            </div>
+                            <div class="collapse-close d-md-none">
+                                <a href="#sidebarMenu" class="fas fa-times" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="true" aria-label="Toggle navigation"></a>
+                            </div>
+                        </div>
+                        <ul class="nav flex-column">
+
+                            <li class='nav-item  @(ViewContext.RouteData.Values["controller"].ToString() == "Home" ? "active" : "") '>
+                                <a href="@Url.Action("Index","Home")" class="nav-link">
+                                    <span class="sidebar-icon"><span class="fa fa-tachometer-alt" aria-hidden="true"></span></span>
+                                    <span>Trang chủ</span>
+                                </a>
+                            </li>
+                            <li class='nav-item  @(ViewContext.RouteData.Values["controller"].ToString() == "Category"? "active" : "")'>
+                                <a href="@Url.Action("Index","Category")" class="nav-link">
+                                    <span class="sidebar-icon"><span class="fas fa-th-list"></span></span>
+                                    <span>Danh mục</span>
+                                </a>
+                            </li>
+                            <li class='nav-item  @(ViewContext.RouteData.Values["controller"].ToString() == "Product"? "active" : "") '>
+                                <a href="@Url.Action("Index","Product")" class="nav-link">
+                                    <span class="sidebar-icon"><span class="fas fa-shopping-cart"></span></span>
+                                    <span>Sản phẩm</span>
+                                </a>
+                            </li>
+
+                            <li class='nav-item  @(ViewContext.RouteData.Values["controller"].ToString() == "Bill"? "active" : "" )'>
+                                <a href="@Url.Action("Index","Bill")" class="nav-link">
+                                    <span class="sidebar-icon"><span class="fas fa-money-bill"></span></span>
+                                    <span>Hóa đơn</span>
+                                </a>
+                            </li>
+                            <li class='nav-item  @(ViewContext.RouteData.Values["controller"].ToString() == "DanhGia"? "active" : "") '>
+                                <a href="@Url.Action("Index","DanhGia", new { area = "Admin" })" class="nav-link">
+                                    <span class="sidebar-icon"><span class="fas fa-star"></span></span>
+                                    <span>Đánh giá</span>
+                                </a>
+                            </li>
+                            <li class='nav-item  @(ViewContext.RouteData.Values["controller"].ToString() == "KhuyenMai" ? "active" : "") '>
+                                <a href="@Url.Action("Index","KhuyenMai", new { area = "Admin" })" class="nav-link">
+                                    <span class="sidebar-icon"><span class="fas fa-tags"></span></span>
+                                    <span>Khuyến mãi</span>
+                                </a>
+                            </li>
+
+
+                            @if (tk.LoaiTaiKhoan == true)
+                            {
+                                <li class='nav-item  @(ViewContext.RouteData.Values["controller"].ToString() == "AdminUser"? "active" : "") '>
+                                    <a href="@Url.Action("Index","AdminUser")" class="nav-link">
+                                        <span class="sidebar-icon"><span class="fas fa-user-alt"></span></span>
+                                        <span>Tài khoản quản trị</span>
+                                    </a>
+                                </li>
+                            }
+                            <li class='nav-item  @(ViewContext.RouteData.Values["controller"].ToString() == "ClientUser"? "active" : "") '>
+                                <a href="@Url.Action("Index","ClientUser")" class="nav-link">
+                                    <span class="sidebar-icon"><span class="fas fa-user-friends"></span></span>
+                                    <span>Tài khoản người dùng</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+
+                <main class="content">
+
+                    <nav class="navbar navbar-top navbar-expand navbar-dashboard navbar-dark pl-0 pr-2 pb-0">
+                        <div class="container-fluid px-0">
+                            <div class="d-flex justify-content-between w-100" id="navbarSupportedContent">
+                                <div class="d-flex">
+                                </div>
+                                <ul class="navbar-nav align-items-center">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link pt-1 px-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <div class="media d-flex align-items-center">
+                                                <img class="user-avatar md-avatar rounded-circle" alt="Image placeholder" src="~/Assets/Admin/assets/img/team/profile-picture-3.jpg">
+                                                <div class="media-body ml-2 text-dark align-items-center d-none d-lg-block">
+                                                    <span class="mb-0 font-small font-weight-bold">@tk.HoTen</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-menu dashboard-dropdown dropdown-menu-right mt-2">
+                                            @*<a class="dropdown-item font-weight-bold" href="#"><span class="far fa-user-circle"></span>Thông tin cá nhân</a>
+                                                <a class="dropdown-item font-weight-bold" href="#"><span class="fas fa-cog"></span>Cài đặt</a>*@
+                                            <div role="separator" class="dropdown-divider"></div>
+                                            <a class="dropdown-item font-weight-bold" href="@Url.Action("Logout","Login")"><span class="fas fa-sign-out-alt text-danger"></span>Đăng xuất</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    @RenderBody()
+                    <footer class="footer section py-5">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                                <p class="mb-0 text-center text-xl-left">
+                                    Copyright © <span class="current-year"></span>
+
+                                </p>
+                            </div>
+                        </div>
+                    </footer>
+                    <div class="overlay" id="overlay"></div>
+                    @RenderSection("Popup", required: false)
+                    @RenderSection("changePopup", required: false)
+                    @RenderSection("deletePopup", required: false)
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Core -->
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Assets/Admin/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="~/Assets/Admin/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Vendor JS -->
+    <script src="~/Assets/Admin/vendor/onscreen/dist/on-screen.umd.min.js"></script>
+
+    <!-- Slider -->
+    <script src="~/Assets/Admin/vendor/nouislider/distribute/nouislider.min.js"></script>
+
+    <!-- Jarallax -->
+    <script src="~/Assets/Admin/vendor/jarallax/dist/jarallax.min.js"></script>
+
+    <!-- Smooth scroll -->
+    <script src="~/Assets/Admin/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Count up -->
+    <script src="~/Assets/Admin/vendor/countup.js/dist/countUp.umd.js"></script>
+
+    <!-- Notyf -->
+    <script src="~/Assets/Admin/vendor/notyf/notyf.min.js"></script>
+
+    <!-- Charts -->
+    <script src="~/Assets/Admin/vendor/chartist/dist/chartist.min.js"></script>
+    <script src="~/Assets/Admin/vendor/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+
+    <!-- Datepicker -->
+    <script src="~/Assets/Admin/vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script>
+
+    <!-- Simplebar -->
+    <script src="~/Assets/Admin/vendor/simplebar/dist/simplebar.min.js"></script>
+
+    <!-- Github buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <!-- Volt JS --><script src="~/Assets/Admin/js/KhuyenMai.js"></script>
+    <script src="~/Assets/Client/js/sweetalert.min.js"></script>
+    <script src="~/Assets/Admin/assets/js/volt.js"></script>
+    @RenderSection("Script", required: false)
+
+</body>
+
+</html>

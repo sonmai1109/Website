@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Có lỗi gì đó !!!";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="error404-area ptb-100 ptb-sm-60">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="error-wrapper text-center">
+                    <div class="error-text">
+                        <h1>500</h1>
+                        <h2>Opps! Có lỗi gì đó</h2>
+                        <p>Xin lỗi có lỗi gì đó. Vui lòng thử lại sau!!</p>
+                        <!-- </div>
+                        <div class="search-error">
+                            <form id="search-form" action="#">
+                                <input type="text" placeholder="Search">
+                                <button><i class="fa fa-search"></i></button>
+                            </form>
+                        </div> -->
+                        <div class="error-button" style="margin-bottom: 50px;">
+                            <a href="@Url.Action("Index","Home")">Trở về trang chủ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

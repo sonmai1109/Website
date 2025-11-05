@@ -1,0 +1,72 @@
+﻿
+@model List<Nhom3.Models.HoaDon>
+@{
+    ViewBag.Title = "Đơn hàng của bạn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="breadcrumb-area mt-30">
+    <div class="container">
+        <div class="breadcrumb">
+            <ul class="d-flex align-items-center">
+                <li>@Html.ActionLink("Trang chủ", "Index", "Home")</li>
+                <li class="active">@Html.ActionLink("Đơn hàng của bạn", "ListBills", "Bill")</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Container End -->
+</div>
+<!-- Breadcrumb End -->
+<!-- Cart Main Area Start -->
+<div class="cart-main-area ptb-100 ptb-sm-60">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <!-- Form Start -->
+                <form>
+                    <div class="table-content table-responsive mb-45">
+                        <!-- Table Content Start -->
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="product-thumbnail">Ngày đặt</th>
+                                    <th class="product-name">Người nhận</th>
+                                    <th class="product-size">Số điện thoại</th>
+                                    <th class="product-status">Trạng thái</th>
+                                    <th class="product-detail">Chi tiết</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td class="product-thumbnail">
+                                            <b>@item.NgayDat</b>
+                                        </td>
+                                        <td class="product-name">@item.HoTenNguoiNhan</td>
+                                        <td class="product-size"><b>@item.SoDienThoaiNhan</b></td>
+                                        <td class="product-status">
+                                            @(item.TrangThai == 0 ? "Đã bị hủy" :
+                                            (item.TrangThai == 1) ? "Đang chuẩn bị" : (item.TrangThai == 2)? "Đang giao" : "Đã thanh toán")
+                                        </td>
+                                        <td><a href="@Url.Action("Details","Bill", new { id = item.MaHD })">Chi tiết</a></td>
+                                        @if (item.TrangThai == 1)
+                                        {
+                                            <td><button class="btn btn-danger" type="button" onclick="huyDonHang(@item.MaHD)">Hủy đơn hàng</button></td>
+                                        }
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Table Content Start -->
+                    <!-- Row End -->
+                </form>
+                <!-- Form End -->
+            </div>
+        </div>
+        <!-- Row End -->
+    </div>
+</div>
+<!-- Cart Main Area End -->

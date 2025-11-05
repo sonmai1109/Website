@@ -1,0 +1,109 @@
+﻿@model PagedList.IPagedList<Nhom3.Models.DanhGia>
+@using PagedList.Mvc
+@{
+    ViewBag.Title = "Quản lý đánh giá";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css">
+<div class="d-flex justify-content-between py-4">
+    <h2 class="h4">Danh sách đánh giá</h2>
+</div>
+
+<div class="table-settings mb-4">
+    <div class="row align-items-center justify-content-between">
+        <div class="col-md-6">
+            <form>
+                <div class="input-group">
+                    <button class="input-group-text"><span class="fas fa-search"></span></button>
+                    <input type="text" class="form-control" name="searchString" value="@ViewBag.searchString" placeholder="Tìm bình luận...">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="card card-body border-light shadow-sm table-wrapper table-responsive pt-0">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Nội dung</th>
+                <th>Xếp hạng</th>
+                <th>Người đánh giá</th>
+                <th>Sản phẩm</th>
+                <th>Ngày</th>
+                <th>Trạng thái</th>
+                <th>Tùy chọn</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr id="row-@item.MaDanhGia">
+                    <td>@item.MaDanhGia</td>
+                    <td>@Html.Raw(System.Web.HttpUtility.HtmlEncode(item.BinhLuan).Replace("\n", "<br/>"))</td>
+                    <td>
+                        @{
+                            string xh = "";
+                            switch (item.XepHang)
+                            {
+                                case 3: xh = "Tệ"; break;
+                                case 2: xh = "Trung bình"; break;
+                                case 1: xh = "Tốt"; break;
+                            }
+                        }
+                        @xh
+                    </td>
+
+                    <td>@(item.TaiKhoanNguoiDung != null ? item.TaiKhoanNguoiDung.HoTen : "Khách")</td>
+                    <td>@(item.SanPham != null ? item.SanPham.TenSP : item.MaSP.ToString())</td>
+                    <td>@item.NgayTao.ToString("dd/MM/yyyy HH:mm")</td>
+                    <td>
+                        <span class="font-weight-bold @(item.TrangThai == 1 ? "text-success" : "text-danger")">
+                            @(item.TrangThai == 1 ? "Hiển thị" : "Đã ẩn")
+                        </span>
+                    </td>
+                    <td>
+                        <div class="btn-group">
+                            <button class="btn btn-sm btn-outline-secondary" onclick="suaDanhGia(@item.MaDanhGia)">
+                                @(item.TrangThai == 1 ? "Ẩn" : "Hiện")
+                            </button>
+                            <button class="btn btn-sm btn-outline-danger ml-2" onclick="deleteData(@item.MaDanhGia)">Xóa</button>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="card-footer px-3 border-0 d-flex align-items-center justify-content-between">
+        @Html.PagedListPager(Model, page => Url.Action("Index",
+            new { page, pageSize = Model.PageSize, searchString = ViewBag.searchString }))
+    </div>
+</div>
+
+@section deletePopup {
+    <div class="deletePopUp" id="deletePopUp">
+        <section class="vh-lg-100 d-flex align-items-center">
+            <div class="container">
+                <div class="row justify-content-center form-bg-image">
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <div class="signin-inner my-3 my-lg-0 bg-white shadow-soft border rounded p-4 w-100 fmxw-500">
+                            <h6 class="form-group mb-4 text-center">Bạn có chắc chắn muốn xóa đánh giá này?</h6>
+                            <input type="hidden" id="delete-dg-id" />
+                            <div class="row">
+                                <button type="button" class="btn btn-block btn-danger" onclick="xoaDanhGia()">Chắc chắn</button>
+                                <div class="btn btn-block border-primary cancelPopup" id="cancelPopupDel">Hủy</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+}
+
+@section Script{
+    <script src="~/Assets/Admin/js/DanhGia.js"></script>
+}
+

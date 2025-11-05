@@ -1,0 +1,118 @@
+﻿@model PagedList.IPagedList<Nhom3.Models.TaiKhoanNguoiDung>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css">
+@{
+    ViewBag.Title = "Tài khoản người dùng";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
+    <div class="d-block mb-4 mb-md-0">
+
+        <h2 class="h4">Danh sách tài khoản khách hàng</h2>
+    </div>
+</div>
+<div class="table-settings mb-4">
+    <div class="row align-items-center justify-content-between">
+        <div class="col col-md-6 col-lg-3 col-xl-4">
+            <form>
+                <div class="input-group">
+                    <button class="input-group-text" id="basic-addon2"><span class="fas fa-search"></span></button>
+                    <input type="text" class="form-control" name="searchString" value="@ViewBag.searchString" id="exampleInputIconLeft" placeholder="Tên đăng nhập" aria-label="Search" aria-describedby="basic-addon2">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="card card-body border-light shadow-sm table-wrapper table-responsive pt-0">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Họ và tên</th>
+                <th>Tên đăng nhập</th>
+                <th>Số điện thoại</th>
+                <th>Địa chỉ</th>
+                <th>Ngày sinh</th>
+                <th>Email</th>
+                <th>Giới tính</th>
+                <th>Trạng thái</th>
+                <th>Tùy chọn</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Item -->
+            @foreach (var item in Model)
+            {
+                <tr id="row-@item.MaTK">
+                    <td>
+                        <span class="font-weight-normal">@item.HoTen</span>
+                    </td>
+                    <td><span class="font-weight-normal">@item.TenDangNhap</span></td>
+                    <td><span class="font-weight-normal">@item.SoDienThoai</span></td>
+                    <td><span class="font-weight-normal">@item.DiaChi</span></td>
+                    <td><span class="font-weight-normal">@item.NgaySinh.ToString("dd/MM/yyyy")</span></td>
+                    <td><span class="font-weight-normal">@item.Email</span></td>
+                    <td><span class="font-weight-normal">@(item.GioiTinh ? "Nam" : "Nữ")</span></td>
+                    <td><span class="font-weight-bold text-success">@(item.TrangThai ? "Đã kích hoạt" : "Đã vô hiệu hóa")</span></td>
+                    <td>
+                        <div class="btn-group">
+                            <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="icon icon-sm">
+                                    <span class="fas fa-ellipsis-h icon-dark"></span>
+                                </span>
+                                <span class="sr-only">Danh mục lựa chọn</span>
+                            </button>
+                            <div class="dropdown-menu">
+                                <button class="dropdown-item change" onclick="suaTaiKhoan(@item.MaTK)">
+                                    <span class="fas fa-edit mr-2"></span>
+                                    @(item.TrangThai ? "Vô hiệu hóa" : "Kích hoạt")
+                                </button>
+                                <button class="dropdown-item text-danger delete" onclick="deleteData(@item.MaTK)"><span class="fas fa-trash-alt mr-2"></span>Xóa</button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="card-footer px-3 border-0 d-flex align-items-center justify-content-between">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination mb-0">
+                @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+
+                @Html.PagedListPager(Model, page => Url.Action("Index",
+                    new { page, pageSize = Model.PageSize, searchString = ViewBag.searchString }))
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+@section deletePopup {
+    <div class="deletePopUp" id="deletePopUp">
+        <section class="vh-lg-100 d-flex align-items-center">
+            <div class="container">
+                <div class="row justify-content-center form-bg-image">
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <div class="signin-inner my-3 my-lg-0 bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-500">
+                            <h6 class="form-group mb-4 text-center fa-1x">
+                                Bạn có thể vô hiệu hóa tài khoản thay vì xóa. Bạn đã chắc chắn chưa?
+                            </h6>
+                            <input type="hidden" value="" id="delete-user-matk" name="id" />
+                            <div class="row d-flex flex-row">
+                                <button type="button" class="btn btn-block btn-danger" onclick="xoaTaiKhoan()">Chắc chắn</button>
+                                <div class="btn btn-block border-primary cancelPopup" id="cancelPopupDel">Hủy</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+}
+
+@section Script{
+    <script src="~/Assets/Admin/js/addPopupBill.js"></script>
+    <script src="~/Assets/Admin/js/ClientUser.js"></script>
+}
+
+

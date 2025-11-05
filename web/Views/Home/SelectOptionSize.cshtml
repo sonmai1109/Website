@@ -1,0 +1,6 @@
+﻿
+@model IEnumerable<Nhom3.Models.KichCo>
+@foreach (var item in Model)
+{
+    <option id="kichco-soluong-@item.MaKichCo">@item.TenKichCo</option>
+}

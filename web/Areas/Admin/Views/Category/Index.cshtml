@@ -1,0 +1,180 @@
+﻿@model PagedList.IPagedList<Nhom3.Models.DanhMuc>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css">
+@{
+    ViewBag.Title = "Danh mục sản phẩm";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
+    <div class="d-block mb-4 mb-md-0">
+
+        <h2 class="h4">Danh sách danh mục</h2>
+    </div>
+    <div class="btn-toolbar mb-2 mb-md-0">
+        <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-primary" id="addPopup"><span class="fas fa-plus mr-2"></span>Thêm danh mục</button>
+        </div>
+    </div>
+</div>
+<div class="table-settings mb-4">
+    <div class="row align-items-center justify-content-between">
+        <div class="col col-md-6 col-lg-3 col-xl-4">
+            <form>
+                <div class="input-group">
+                    <button class="input-group-text" type="submit" id="basic-addon2"><span class="fas fa-search"></span></button>
+                    <input type="text" name="searchString" value="@ViewBag.searchString" class="form-control" id="exampleInputIconLeft" placeholder="Tên danh mục" aria-label="Search" aria-describedby="basic-addon2">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="card card-body border-light shadow-sm table-wrapper table-responsive pt-0">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Tên danh mục</th>
+                <th>Ngày tạo</th>
+                <th>Người tạo</th>
+                <th>Ngày sửa</th>
+                <th>Người sửa</th>
+                <th>Tùy chọn</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr id="row-@item.MaDM">
+                    <td>
+                        <span class="font-weight-normal">@item.TenDanhMuc</span>
+                    </td>
+                    <td><span class="font-weight-normal">@item.NgayTao</span></td>
+                    <td><span class="font-weight-bold">@item.NguoiTao</span></td>
+                    <td><span class="font-weight-normal">@item.NgaySua</span></td>
+                    <td><span class="font-weight-bold">@item.NguoiSua</span></td>
+                    <td>
+                        <div class="btn-group">
+                            <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="icon icon-sm">
+                                    <span class="fas fa-ellipsis-h icon-dark"></span>
+                                </span>
+                                <span class="sr-only">Danh mục lựa chọn</span>
+                            </button>
+                            <div class="dropdown-menu">
+                                <button class="dropdown-item change" onclick="loadData(@item.MaDM)"><span class="fas fa-edit mr-2"></span>Chỉnh sửa</button>
+                                <button class="dropdown-item text-danger delete" onclick="deleteData(@item.MaDM)"><span class="fas fa-trash-alt mr-2"></span>Xóa</button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="card-footer px-3 border-0 d-flex align-items-center justify-content-between">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination mb-0">
+                @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+
+                @Html.PagedListPager(Model, page => Url.Action("Index",
+                    new { page, pageSize = Model.PageSize, searchString = ViewBag.searchString }))
+            </ul>
+        </nav>
+    </div>
+</div>
+
+@section Popup{
+    <div class="popUp popupPrivate" id="popUp">
+        <section class="d-flex align-items-center">
+            <div class="container">
+                <div class="row justify-content-center form-bg-image" data-background-lg="~/Assets/Admin/assets/img/illustrations/signin.svg">
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <div class="signin-inner my-3 my-lg-0 bg-white shadow-soft rounded border-light p-4 p-lg-5 w-100 fmxw-500">
+                            <div class="text-center text-md-center mb-4 mt-md-0">
+                                <h1 class="mb-0 h3 text-popup">Tạo danh mục</h1>
+                            </div>
+                            <form id="add-form" onsubmit="return themDanhMuc()">
+                                <!-- Form -->
+                                <div class="form-group mb-4">
+                                    <p id="add-message"></p>
+                                    <hr />
+                                    <label for="category">Tên danh mục</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="tendanhmuc" placeholder="Tên danh mục" id="category" autofocus required>
+                                    </div>
+                                    <span class="text-danger mess-error d-none" style="font-size: 15px">Tên danh mục đã tồn tại. Vui lòng chọn tên danh mục khác.</span>
+                                </div>
+                                <!-- End of Form -->
+
+                                <button type="submit" class="btn btn-block btn-primary">Tạo danh mục</button>
+                                <div class="btn btn-block border-primary cancelPopup" id="cancelPopup">Hủy</div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+}
+
+@section changePopup {
+    <div class="changePopUp popupPrivate" id="changePopUp">
+        <section class="vh-lg-100 d-flex align-items-center">
+            <div class="container">
+                <div class="row justify-content-center form-bg-image">
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <div class="signin-inner my-3 my-lg-0 bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-500">
+                            <div class="text-center text-md-center mb-4 mt-md-0">
+                                <h1 class="mb-0 h3 text-popup">Chỉnh sửa danh mục</h1>
+                            </div>
+                            <form id="update-form" onsubmit="return suaDanhMuc()">
+                                <!-- Form -->
+                                <p id="update-message"></p>
+                                <hr />
+                                <input type="hidden" name="madm" id="madm" value="" />
+                                <div class="form-group mb-4">
+                                    <label for="tendanhmuc">Tên danh mục</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="tendanhmuc" placeholder="Tên danh mục" id="tendanhmuc" value="" autofocus required>
+                                    </div>
+                                </div>
+                                <!-- End of Form -->
+
+                                <button type="submit" class="btn btn-block btn-secondary">Chỉnh sửa</button>
+                                <div class="btn btn-block border-primary cancelPopup" id="cancelPopup">Hủy</div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+}
+
+@section deletePopup {
+    <div class="deletePopUp" id="deletePopUp">
+        <section class="vh-lg-100 d-flex align-items-center">
+            <div class="container">
+                <form>
+                    <div class="row justify-content-center form-bg-image">
+                        <div class="col-12 d-flex align-items-center justify-content-center">
+                            <div class="signin-inner my-3 my-lg-0 bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-500">
+                                <h6 class="form-group mb-4 text-center fa-1x">
+                                    Xóa danh mục sẽ xóa tất cả sản phẩm của danh mục đó. Bạn đã chắc chắn chưa ?
+                                </h6>
+                                <input type="hidden" value="" id="delete-madm" name="madm" />
+                                <div class="row d-flex flex-row">
+                                    <button type="button" class="btn btn-block btn-danger" onclick="xoaDanhMuc()">Chắc chắn</button>
+                                    <div class="btn btn-block border-primary cancelPopup" id="cancelPopupDel">Hủy</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+}
+@section Script{
+    <script src="~/Assets/Admin/js/addPopUp.js"></script>
+    <script src="~/Assets/Admin/js/Category.js"></script>
+}
+

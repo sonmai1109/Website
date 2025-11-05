@@ -1,0 +1,113 @@
+﻿
+@model List<Nhom3.Models.SanPhamChiTiet>
+@{
+    ViewBag.Title = "Đặt hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var info = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+    Decimal tongtien = 0;
+}
+
+<!-- Breadcrumb Start -->
+<div class="breadcrumb-area mt-30">
+    <div class="container">
+        <div class="breadcrumb">
+            <ul class="d-flex align-items-center">
+                <li>@Html.ActionLink("Trang chủ", "Index", "Home")</li>
+                <li class="active">@Html.ActionLink("Đặt hàng", "CheckOut", "Cart")</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Container End -->
+</div>
+<!-- Breadcrumb End -->
+<div class="checkout-area pb-100 pt-15 pb-sm-60">
+    <div class="container">
+        <div class="row">
+            <form class="col-lg-6 col-md-6" id="add-bill-form" onsubmit="return datHang()">
+                <div class="checkbox-form mb-sm-40">
+                    <h3>Thông tin nhận hàng</h3>
+                    <input type="hidden" name="matk" value="@ViewBag.TaiKhoan.MaTK" />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="checkout-form-list mb-30">
+                                <label>Họ tên</label>
+                                <input type="text" required placeholder="Họ tên người nhận" name="hotennguoinhan" value="@ViewBag.TaiKhoan.HoTen" />
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="checkout-form-list mb-30">
+                                <label>Số điện thoại</label>
+                                <input type="text" required placeholder="Số điện thoại người nhận" name="sodienthoainhan" value="@ViewBag.TaiKhoan.SoDienThoai" />
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="checkout-form-list mb-30">
+                                <label>Địa chỉ</label>
+                                <input type="text" name="diachinhan" required placeholder="Địa chỉ người nhận" value="@ViewBag.TaiKhoan.DiaChi" />
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="different-address">
+                        <div class="order-notes">
+                            <div class="checkout-form-list">
+                                <label>Ghi chú</label>
+                                <textarea id="checkout-mess" cols="30" name="ghichu" rows="10" placeholder="Ghi chú cho đơn hàng của bạn"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+            <div class="col-lg-6 col-md-6">
+                <div class="your-order">
+                    <h3>Đơn hàng của bạn</h3>
+                    <div class="your-order-table table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="product-name">Sản phẩm</th>
+
+                                    <th class="product-total">Thành tiền</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr class="cart_item">
+                                        <td class="product-name">
+                                            @item.SanPham.TenSP <span class="product-quantity">x @item.ChiTietHoaDons.First().SoLuongMua</span>
+                                        </td>
+                                        <td class="product-total">
+                                            <span class="amount">@(string.Format(info,"{0:c0}", item.ChiTietHoaDons.First().GiaMua * item.ChiTietHoaDons.First().SoLuongMua))</span>
+                                        </td>
+                                    </tr>
+                                    tongtien += item.ChiTietHoaDons.First().GiaMua * item.ChiTietHoaDons.First().SoLuongMua;
+                                }
+                            </tbody>
+                            <tfoot>
+
+                                <tr class="order-total">
+                                    <th>Tổng đơn hàng</th>
+                                    <td>
+                                        <span class=" total amount">@(string.Format(info, "{0:c0}",tongtien))</span>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <p id="add-message"></p>
+        <div class="float-md-right">
+            <input type="submit" value="Đặt hàng" form="add-bill-form" class="return-customer-btn">
+        </div>
+    </div>
+</div>
+
+
+

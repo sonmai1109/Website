@@ -1,0 +1,86 @@
+﻿@model IEnumerable<Nhom3.Models.SanPhamKhuyenMai>
+@{
+    var km = ViewBag.KhuyenMai as Nhom3.Models.KhuyenMai;
+    ViewBag.Title = "Gán sản phẩm cho khuyến mãi";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<div class="d-flex justify-content-between py-4">
+    <h2 class="h4">Gán sản phẩm cho: @km.TenKM (@km.PhanTram %)</h2>
+    <a class="btn btn-secondary" href="@Url.Action("Index","KhuyenMai", new { area = "Admin" })">Quay lại</a>
+</div>
+
+<div class="row mb-3">
+    <div class="col-md-6">
+        <input type="text" id="searchSP" class="form-control" placeholder="Tìm sản phẩm theo tên (tối thiểu 2 ký tự)">
+        <div id="searchResult" class="mt-2"></div>
+    </div>
+</div>
+
+<h5>Danh sách đã gán</h5>
+<table class="table table-hover">
+    <thead><tr><th>#</th><th>Sản phẩm</th><th>Hành động</th></tr></thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var a in Model)
+            {
+                <tr id="link-@a.ID">
+                    <td>@a.ID</td>
+                    <td>@(a.SanPham != null ? a.SanPham.TenSP : a.MaSP.ToString())</td>
+                    <td>
+                        <button class="btn btn-sm btn-danger" onclick="removeLink(@a.ID)">Thu hồi</button>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr><td colspan="3">Chưa có sản phẩm nào được gán.</td></tr>
+        }
+    </tbody>
+</table>
+
+@section Script {
+    <script>
+$(function(){
+    var timer = null;
+    $('#searchSP').on('input', function(){
+        var q = $(this).val().trim();
+        if (q.length < 2) { $('#searchResult').empty(); return; }
+        clearTimeout(timer);
+        timer = setTimeout(function(){
+            $.get('@Url.Action("Search","Product", new { area = "Admin" })', { q: q }, function(data){
+                var html = '';
+                if(!data || data.length === 0) html = '<div class="alert alert-light">Không tìm thấy</div>';
+                else {
+                    data.forEach(function(p){
+                        html += '<div class="p-2 border mb-1 d-flex justify-content-between align-items-center">'
+                              +  '<div>' + p.TenSP + '</div>'
+                              +  '<div><button class="btn btn-sm btn-primary" onclick="assignProduct(' + @km.MaKM + ',' + p.MaSP + ')">Gán</button></div>'
+                              +  '</div>';
+                    });
+                }
+                $('#searchResult').html(html);
+            }).fail(function(xhr){ console.log(xhr.responseText); alert('Lỗi khi tìm sản phẩm'); });
+        }, 250);
+    });
+});
+
+function assignProduct(maKM, maSP){
+    $.post('@Url.Action("AssignProduct","KhuyenMai", new { area = "Admin" })', { maKM: maKM, maSP: maSP }, function(res){
+        if(res.ok) {
+            window.location.reload();
+        } else alert('Gán thất bại');
+    }).fail(function(xhr){ console.log(xhr.responseText); alert('Lỗi server');});
+}
+
+function removeLink(id){
+    if(!confirm('Bạn có chắc muốn thu hồi sản phẩm khỏi chương trình?')) return;
+    $.post('@Url.Action("RemoveProduct","KhuyenMai", new { area = "Admin" })', { id: id }, function(res){
+        if(res.ok) $('#link-' + id).remove();
+        else alert('Thu hồi thất bại');
+    }).fail(function(xhr){ console.log(xhr.responseText); alert('Lỗi server');});
+}
+    </script>
+}
+

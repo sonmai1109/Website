@@ -1,0 +1,94 @@
+﻿
+@model Nhom3.Models.HoaDon
+@{
+    ViewBag.Title = "Chi tiết hóa đơn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var info = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+    Decimal tongtien = 0;
+}
+
+<!-- Breadcrumb Start -->
+<div class="breadcrumb-area mt-30">
+    <div class="container">
+        <div class="breadcrumb">
+            <ul class="d-flex align-items-center">
+                <li>@Html.ActionLink("Trang chủ", "Index", "Home")</li>
+                <li class="active">@Html.ActionLink("Chi tiết đơn hàng", "Details", "Bill", new { id = Model.MaHD }, new { })</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Container End -->
+</div>
+<!-- Breadcrumb End -->
+<!-- Cart Main Area Start -->
+<div class="cart-main-area ptb-100 ptb-sm-60">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <!-- Form Start -->
+                <form action="#">
+                    <div class="table-content table-responsive mb-45">
+                        <!-- Table Content Start -->
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="product-thumbnail">Ảnh</th>
+                                    <th class="product-name">Sản phẩm</th>
+                                    <th class="product-size">Kích cỡ</th>
+                                    <th class="product-price">Giá</th>
+                                    <th class="product-quantity">Số lượng</th>
+                                    <th class="product-subtotal">Tổng</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.ChiTietHoaDons)
+                                {
+                                    <tr>
+                                        <td class="product-thumbnail">
+                                            <a href="@Url.Action("ProductDetail","Product",new { id = item.SanPhamChiTiet.SanPham.MaSP })"><img src="@item.SanPhamChiTiet.SanPham.HinhAnh" alt="cart-image" /></a>
+                                        </td>
+                                        <td class="product-name"><a href="@Url.Action("ProductDetail","Product",new { id = item.SanPhamChiTiet.SanPham.MaSP })">@item.SanPhamChiTiet.SanPham.TenSP</a></td>
+                                        <td class="product-size"><b>@item.SanPhamChiTiet.KichCo.TenKichCo</b></td>
+                                        <td class="product-price"><span class="amount">@string.Format(info, "{0:c0}", item.GiaMua)</span></td>
+                                        <td class="product-quantity">
+                                            <input readonly type="number" value="@item.SoLuongMua" />
+                                        </td>
+                                        <td class="product-total"><span class="amount">@(string.Format(info,"{0:c0}", item.GiaMua * item.SoLuongMua))</span></td>
+                                    </tr>
+                                    tongtien += item.GiaMua * item.SoLuongMua;
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Table Content Start -->
+                    <div class="row">
+                        <!-- Cart Totals Start -->
+                        <div class="col-md-4 col-sm-12">
+                            <div class="cart_totals float-md-right text-md-right">
+                                <h2>Thành tiền</h2>
+                                <br />
+                                <table class="float-md-right">
+                                    <tbody>
+
+                                        <tr class="order-total">
+                                            <th>Tổng</th>
+                                            <td>
+                                                <strong><span class="amount" id="order-total">@(string.Format(info, "{0:c0}",tongtien))</span></strong>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- Cart Totals End -->
+                    </div>
+                    <!-- Row End -->
+                </form>
+                <!-- Form End -->
+            </div>
+        </div>
+        <!-- Row End -->
+    </div>
+</div>
+<!-- Cart Main Area End -->

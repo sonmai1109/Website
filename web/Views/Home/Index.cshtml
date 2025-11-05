@@ -1,0 +1,239 @@
+﻿
+@{
+    ViewBag.Title = "Trang chủ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var info = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+}
+
+@section Slide{
+    <!-- Slider Area Start Here -->
+    <div class="col-xl-9 col-lg-8 slider_box" style="margin-left:-460px;">
+        <div class="slider-wrapper theme-default" style="width:1520px;height:550px;">
+            <!-- Slider Background  Image Start-->
+            <div id="slider" class="nivoSlider" style="height:600px;">
+                <a href="#"><img src="~/UserImage/images/slide1.jpg" data-thumb="img/slider/1.jpg" alt="" title="#htmlcaption1" /></a>
+                <a href="#"><img src="~/UserImage/images/slide2.jpg" data-thumb="img/slider/2.jpg" alt="" title="#htmlcaption2" /></a>
+                <a href="#"><img src="~/UserImage/images/slide3.jpg" data-thumb="img/slider/3.jpg" alt="" title="#htmlcaption3" /></a>
+                <a href="#"><img src="~/UserImage/images/slide4.jpg" data-thumb="img/slider/4.jpg" alt="" title="#htmlcaption4" /></a>
+            </div>
+            <!-- Slider Background  Image Start-->
+        </div>
+    </div>
+    <!-- Slider Area End Here -->
+}
+<style>
+    .price-box {
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+        margin-top: 5px;
+    }
+
+    .discount-tag {
+        background-color: #ff4d4f;
+        color: white;
+        font-weight: bold;
+        font-size: 17px;
+        padding: 2px 6px;
+        border-radius: 4px;
+    }
+
+    .new-price {
+        color: #e60000;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .old-price {
+        color: #888;
+        font-size: 15px;
+        text-decoration: line-through;
+    }
+
+</style>
+
+
+
+
+<div class="arrivals-product pb-85 pb-sm-45" style="margin-top: 85px;">
+    <div class="container">
+        <div class="main-product-tab-area">
+
+            <div class="tab-menu mb-25">
+                <div class="section-ttitle">
+                    <h2>Sản phẩm khuyến mãi</h2>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div id="kids" class="tab-pane fade show active">
+                    <div class="electronics-pro-active owl-carousel">
+                        @foreach (var item in ViewBag.SanPhamKhuyenMai as List<Nhom3.Models.SanPhamKhuyenMai>)
+                        {
+                            var sp = item.SanPham;
+                            <div class="single-product">
+                                <div class="pro-img">
+                                    <a href="@Url.Action("ProductDetail","Product", new { id = sp.MaSP })">
+                                        <img class="primary-img" src="@sp.HinhAnh" alt="@sp.TenSP" />
+                                    </a>
+                                  
+                                </div>
+                                <div class="pro-content">
+                                    <h4>
+                                        <a href="@Url.Action("ProductDetail", "Product")">@sp.TenSP</a>
+                                    </h4>
+
+                                    <span class="price">
+                                        @if (item.KhuyenMai != null)
+                                        {
+                                            var giaGiam = sp.Gia * (1 - (decimal)item.KhuyenMai.PhanTram / 100);
+
+                                            <div class="price-box">
+                                                <span class="discount-tag">-@item.KhuyenMai.PhanTram%</span>
+                                                <span class="new-price">@String.Format("{0:0,0}đ", giaGiam)</span>
+                                                <del class="old-price">@String.Format("{0:0,0}đ", sp.Gia)</del>
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <div class="price-box">
+                                                <span class="new-price">@String.Format("{0:0,0}đ", sp.Gia)</span>
+                                            </div>
+                                        }
+                                    </span>
+
+                                    <div class="pro-actions">
+                                        <div class="actions-primary">
+                                            <a href="#" onclick="loadSanPham(@item.MaSP)" class="quick_view" data-toggle="modal" data-target="#myModal" title="Thêm">
+                                                + Thêm vào giỏ hàng
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        }
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="tab-menu mb-25">
+                <div class="section-ttitle">
+                    <h2>Sản phẩm mới</h2>
+                </div>
+            </div>
+
+            <!-- Tab Contetn Start -->
+            <div class="tab-content">
+                <div id="kids" class="tab-pane fade show active">
+                    <!-- Arrivals Product Activation Start Here -->
+                    <div class="electronics-pro-active owl-carousel">
+                        @foreach (var item in ViewBag.SanPhamMoi)
+                        {
+                            <!-- Single Product Start -->
+                            <div class="single-product">
+                                <!-- Product Image Start -->
+                                <div class="pro-img">
+                                    <a href="@Url.Action("ProductDetail","Product", new { id = item.MaSP })">
+                                        <img class="primary-img" src="@item.HinhAnh" alt="single-product">
+                                        <img class="secondary-img" src="@item.HinhAnh" alt="single-product">
+                                    </a>
+                                    <a href="#" onclick="loadSanPham(@item.MaSP)" class="quick_view" data-toggle="modal" data-target="#myModal" title="Xem nhanh"><i class="lnr lnr-magnifier"></i></a>
+                                </div>
+                                <!-- Product Image End -->
+                                <!-- Product Content Start -->
+                                <div class="pro-content">
+                                    <div class="pro-info">
+                                        <h4><a href="@Url.Action("ProductDetail","Product")">@item.TenSP</a></h4>
+                                        <p><span class="price">@string.Format(info, "{0:c0}", item.Gia)</span></p>
+                                    </div>
+                                    <div class="pro-actions">
+                                        <div class="actions-primary">
+                                            <a href="#" onclick="loadSanPham(@item.MaSP)" class="quick_view" data-toggle="modal" data-target="#myModal" title="Thêm"> + Thêm vào giỏ hàng</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- Product Content End -->
+                            </div>
+                            <!-- Single Product End -->
+                        }
+
+                    </div>
+                    <!-- Arrivals Product Activation End Here -->
+                </div>
+            </div>
+            <!-- Tab Content End -->
+
+            <div class="tab-menu mb-25">
+                <div class="section-ttitle">
+                    <h2>Giá tốt</h2>
+                </div>
+            </div>
+
+            <!-- Tab Contetn Start -->
+            <div class="tab-content">
+                <div id="kids" class="tab-pane fade show active">
+                    <!-- Arrivals Product Activation Start Here -->
+                    <div class="electronics-pro-active owl-carousel">
+                        @foreach (var item in ViewBag.GiaTot)
+                        {
+                            <!-- Single Product Start -->
+                            <div class="single-product">
+                                <!-- Product Image Start -->
+                                <div class="pro-img">
+                                    <a href="@Url.Action("ProductDetail","Product",new { id = item.MaSP })">
+                                        <img class="primary-img" src="@item.HinhAnh" alt="single-product">
+                                        <img class="secondary-img" src="@item.HinhAnh" alt="single-product">
+                                    </a>
+                                    <a href="#" onclick="loadSanPham(@item.MaSP)" class="quick_view" data-toggle="modal" data-target="#myModal" title="Xem nhanh"><i class="lnr lnr-magnifier"></i></a>
+                                </div>
+                                <!-- Product Image End -->
+                                <!-- Product Content Start -->
+                                <div class="pro-content">
+                                    <div class="pro-info">
+                                        <h4><a href="@Url.Action("ProductDetail","Product",new { id = item.MaSP })">@(char.ToUpper(item.TenSP[0]) + item.TenSP.Substring(1))</a></h4>
+                                        <p><span class="price">@string.Format(info, "{0:c0}", item.Gia)</span></p>
+                                    </div>
+                                    <div class="pro-actions">
+                                        <div class="actions-primary">
+                                            <a href="#" onclick="loadSanPham(@item.MaSP)" class="quick_view" data-toggle="modal" data-target="#myModal" title="Thêm"> + Thêm vào giỏ hàng</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- Product Content End -->
+                            </div>
+                            <!-- Single Product End -->
+                        }
+
+                    </div>
+                    <!-- Arrivals Product Activation End Here -->
+                </div>
+            </div>
+            <!-- Tab Content End -->
+        </div>
+        <!-- main-product-tab-area-->
+    </div>
+    <!-- Container End -->
+</div>
+

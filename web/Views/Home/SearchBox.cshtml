@@ -1,0 +1,20 @@
+﻿
+@model IEnumerable<Nhom3.Models.DanhMuc>
+
+<div class="search-container">
+    <!-- Nút kích hoạt -->
+    <div class="search-box" style="margin-top: 38px;">
+        <form method="get" action="/Product/Shop" style="display: flex; margin-top: -23px; margin-left: -360px; padding-right: 180px; ">
+            @*<select name="madm" class="bootstrap-select" style="height: 34px; border-radius:0;width:320px;">
+                    <option value="0">Tất cả danh mục</option>
+                    @foreach (var item in Model)
+                    {
+                        <option value="@item.MaDM">@item.TenDanhMuc</option>
+                    }
+                </select>*@
+            <input type="text" name="searchString" placeholder="Tìm kiếm..." style=" width: 435px; height: 32px; margin-left: 50px; ">
+            <button type="submit" class="submit-btn" style="border: none; background-color: black; color: white; width: 55px; "><i class="lnr lnr-magnifier"></i></button>
+        </form>
+    </div>
+</div>
+
